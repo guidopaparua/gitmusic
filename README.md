@@ -5,3 +5,4 @@ Hamwee Santiago: Argentino, 19 años, sin experiencia en programación. De Boca.
 Seijas Lucas: Argentino, 22 años\
 Reyes Monica: Colombiana, 22 años\
 Grasso Juan Pablo, 21 años.\
+Papa Rúa Guido: Argentino, 26 años, estudiante de Medicina.\
