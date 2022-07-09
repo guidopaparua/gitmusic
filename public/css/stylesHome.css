@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+    /********** HEADER ************/
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .burger-container {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    
+    .menu-container {
+        display: none;
+    }
+    
+    .logo-bar-container {
+        display: flex;
+    
+    
+    }
+    
+    .welcome-container {
+        padding: 15px;
+    }
+    
+    .logo {
+        width: 50%;
+    }
+    
+    .search-button-container{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-container {
+        
+        display: flex;
+        height: 25px;
+        width: 90%;
+       
+    }
+    
+    .welcome-title {
+        font-weight: 400;
+        text-align: center;
+    }
+
+    input {
+        width: 95%;
+        border: none;
+        border-radius: 5px 0 0 5px;
+    }
+    
+    button {
+        width: 15%;
+        padding: 1px;
+        border: none;
+        background-color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .burger-menu {
+        background-color: black;
+        color: white;
+        display: flex;
+        padding: 5px;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        background-color: darkgray;
+    }
+
+      main section article {
+        margin: 10px 0px;
+      }
+      
+      main section article img {
+        width: 100%;
+      }
+
+    .discount {
+        color: #39b54a;
+    }
+
+   main section article i {
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+      }
+      .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 45%;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
