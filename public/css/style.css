@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
 *{
   background-color: #FFFFFF ;
   box-sizing: content-box;
+  font-family: "Roboto";
 }
 
 .container-principal{
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
   width: 100%;
   }
 
@@ -50,6 +51,10 @@ h3{
 }
 
 .imagen{
+  display: flex;
+  justify-content: flex-end;
   width: 50%;
   margin-right: 0;
+  object-fit: cover;
+  overflow: hidden;
 }
