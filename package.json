@@ -1,0 +1,22 @@
+{
+  "name": "grupo_6_proyectomusica",
+  "version": "1.0.0",
+  "description": "Este proyecto busca ser utilizado por cualquier entusiasta de la música que quiera adentrarse en el lado del artista, dándole acceso simplificado a la compra de instrumentos.\r ## **Integrantes**\r Hamwee Santiago: Argentino, 19 años, sin experiencia en programación. De Boca.\\\r Seijas Lucas: Argentino, 22 años.\\\r Reyes Monica: Colombiana, 22 años.\\\r Grasso Juan Pablo, 21 años.\\\r Papa Rúa Guido: Argentino, 26 años, estudiante de Medicina.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidopaparua/grupo_6_proyectomusica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guidopaparua/grupo_6_proyectomusica/issues"
+  },
+  "homepage": "https://github.com/guidopaparua/grupo_6_proyectomusica#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
