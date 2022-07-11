@@ -20,4 +20,3 @@ Los siguientes sitios web fueron elegidos por el grupo porque representan una in
 
 Enlace de Trello: https://trello.com/grupo6tn29
 
-
