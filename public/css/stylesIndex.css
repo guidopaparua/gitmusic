@@ -12,8 +12,7 @@ h3 {
   }
 
 ul {
-    list-style: none;
-    padding: 0;
+    flex-direction: space-between;
 }
 
 img {
@@ -40,13 +39,11 @@ header {
     }
     
     .menu-container {
-        display: none;
+        display: flex;
     }
     
     .logo-bar-container {
         display: flex;
-    
-    
     }
     
     .welcome-container {
@@ -118,6 +115,8 @@ header {
         color: #39b54a;
     }
 
+  
+
    main section article i {
         display: block;
         font-size: 16px;
@@ -138,8 +137,4 @@ header {
         justify-content: space-between;
         align-items: flex-start;
         width: 45%;
-      }
-
-      h3 {
-        font-size: 20px;
       }
