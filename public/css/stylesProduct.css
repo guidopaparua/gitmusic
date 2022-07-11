@@ -148,7 +148,18 @@ header {
         display:flex;
         margin: 50px;
         background-color: whitesmoke;
+        padding: 15px;
+        font-size: 40px;
     }
     .product img {
-        width: 50%
+        width: 50%;
+        margin-right: 10px;
+    }
+    .product .price {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .product .description{
+        font-size: 30px;
+        padding: 30px
     }
