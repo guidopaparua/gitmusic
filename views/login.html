@@ -1,95 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-     <!--Font Awesome ICONOS-->
-     <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
 
-      <!--STYLES.CSS-->
-      <link rel="stylesheet" href="/css/stylesIndex.css">
+    <!--Font Awesome ICONOS-->
+    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
+
+    <!--STYLES.CSS-->
+    <link rel="stylesheet" href="/css/stylesLogin.css">
 
     <title>Grupo 6 - Ingresá a tu cuenta!</title>
 </head>
+
 <body>
     <header>
-        <div class="logo-container">
-            <div class="logo-bar-container">
-                <div class="logo">
-                    <img src="/images/" alt="">
-                </div>
-                <div class="search-button-container">
-                    <div class="search-container">
-                        <input type="text" placeholder="Buscar productos, marcas...">
-                        <button><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="welcome-container">
-                <h2 class="welcome-title"><i class="fa-solid fa-guitar-electric"></i>Los instrumentos que te gustan y al mejor precio</h2>
-            </div>
-        </div>
-        <div class="burger-container">
-            <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-            </div>
-        </div>
-        <div class="menu-container">
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Consejos</a></li>
-                <li><a href="#">Nuestro WhatsApp</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Carrito<i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </div>
+        <div class="cart-icon">LOGO CARRITO</div>
+        <div class="user-icon">LOGO USER</div>
     </header>
     <main>
-        <section class="last-visit">
-            <h3>Más vistos</h3>
-            <div class="products">
-                <article>
-                    <img src="images/tamaDrum.webp" alt="Batería" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <p class="price">$1,499.99</p>
-                        <p class="discount">15% off</p>
-                        <h4 class="description">Batería Tama</h4>
+        <article class="left-container">
+            <div class="login-container">
+                <form action="/" method="get">
+                    <h1 class="login-title">
+                        ¡Hola! Ingresá a tu cuenta
+                    </h1>
+                    <div class="user-data">
+                        <input class="login-input" type="email" placeholder="Correo Electrónico" name="username"
+                            id="username" required>
+                        <input class="login-input" type="password" placeholder="Contraseña" name="password"
+                            id="password" required>
                     </div>
-                </article>
-                <article>
-                    <img src="images/fenderGuitar.webp" alt="Guitarra" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <p class="price">$1,999.99</p>
-                        <p class="discount">30% off</p>
-                        <h4 class="description">Guitarra Fender</h4>
+                    <div class="access-container">
+                        <button type="submit" id="send" class="login-button">Ingresar</button>
+                        <div class="reset-password">
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <a class="register" href="/register">Registrate</a>
+                        </div>
                     </div>
-                </article>
-                <article>
-                    <img src="images/bajoFender.webp" alt="Bajo" class="product_img">
-                    <div class="main-article">
-                        <i class="fas fa-truck"></i>
-                        <p class="price">$1,199.99</p>
-                        <p class="discount">10% off</p>
-                        <h4 class="description">Bajo Fender</h4>
-                    </div>
-                </article>
+                </form>
             </div>
-        </section>
-        <section class="offers">
-            <h3>Armá tu carrito ideal</h3>
-            <div class="products">
+        </article>
 
-            </div>
-        </section>
+        <article class="right-container">
+            <img src="/images/imag-register.jpg" alt="discos-de-vinilo" id="imagen-formulario">
+        </article>
+
     </main>
-    
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
