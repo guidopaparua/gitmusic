@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+
+/********** HEADER ************/
+
+header {
+    background-color: grey;
+}
+
+.burger-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.burger-menu {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/********** HEADER ************/
+/********** HEADER lucas ************/
+
+header{
+    display: flex;
+}
+
+.user_cart{
+    flex-grow: 0.2;
+}
+
+.menu_header{
+    flex-grow: 0.8;
+}
+
+
+/********** HEADER lucas ************/
+
+/********** Main lucas ************/
+
+.carrito{
+    background-color:aliceblue;
+    width: 98%;
+    margin: 0 auto;
+    border: 1px black solid;
+}
+
+.eliminar_producto_barra{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.eliminar_producto_barra p{
+    color: grey;
+}
+
+.eliminar_producto_barra .fa-trash-alt{
+    color: grey;
+}
+
+.img_producto img{
+    width: 25%;
+    margin-left: 36%;
+}
+
+.descripcion_producto{
+    padding:10px;
+}
+
+.descripcion_producto .marca{
+    font-size: 16px;
+    color: gray;
+}
+
+.descripcion_producto .nombre_producto{
+    font-size: 18px;
+    color:cornflowerblue;
+    margin-bottom: 5px;
+}
+
+.descripcion_producto .codigo_producto{
+    color:grey;
+    margin-bottom: 5px;
+}
+
+.descripcion_producto .precio_producto{
+    color:black;
+}
+
+.contenedor_precio_final{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.cantidad_producto p{
+    font-size: 14px;
+    color: gray;
+}
+
+.cantidad_producto{
+    display: flex;
+}
+
+.cantidad_producto p{
+    margin-right: 10px
+}
+
+
+/********** Main lucas ************/
