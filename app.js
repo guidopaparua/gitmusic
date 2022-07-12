@@ -19,12 +19,9 @@ app.get("/register", (req, res)=>{
 app.get("/productDetails", (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/productDetails.html"))
 })
-<<<<<<< HEAD
 app.get("/productCart", (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
 })
-=======
 app.get("/login", (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 })
->>>>>>> 1e7675158e451b6bc268d6cea644fb8d68ab8f6f
