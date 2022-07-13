@@ -54,13 +54,20 @@ header{
 
 /********** HEADER lucas ************/
 
-/********** Main lucas ************/
+/********** Main lucas ************/ 
+
+                                                    /*version celular*/
+
+body{
+    background-color:rgb(233, 233, 233);
+}
 
 .carrito{
-    background-color:aliceblue;
+    background-color:white;
     width: 98%;
     margin: 0 auto;
     border: 1px black solid;
+    margin-top: 10px;
 }
 
 .eliminar_producto_barra{
@@ -110,6 +117,7 @@ header{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 .cantidad_producto p{
@@ -124,6 +132,190 @@ header{
 .cantidad_producto p{
     margin-right: 10px
 }
+
+.total_precio{
+    font-size: 16px;
+    color: black;
+}
+
+.seccion_total_carrito{
+    margin-top: 15px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.sub_total_carrito{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub_total_carrito p{
+    font-size: 14px;
+    color: gray;
+}
+
+.total_coste_envio{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.total_coste_envio p{
+    font-size: 14px;
+    color: gray;
+}
+
+.total_carrito{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 80%;
+    height: 50px;
+    background-color:rgb(233, 233, 233); 
+}
+
+.total_carrito p{
+    font-size: 18px;
+    align-self: center;
+}
+
+.boton_compra{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton_compra button{
+    margin-top: 10px;
+}
+
+                                                    /*version celular*/
+
+                                                    /*version pc*/
+
+.pc{
+    display: none;
+}
+
+@media (min-width: 1024px){
+   
+    .pc{
+        display: block;
+    }
+
+    .inicio_carrito_pc p{
+        padding-left: 10%;
+        font-size: 30px;
+        color: black;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .celular{
+        display: none;
+    }
+
+    .carro_pc{
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .barra_superior_carro_pc{
+        display: flex;
+        justify-content: space-around;
+        background-color:rgb(158, 158, 158); 
+    }
+
+    .barra_superior_carro_pc p{
+        width: 20%;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: black;
+        text-align: center;
+    }
+
+    .carro_producto_pc{
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .carro_producto_pc img{
+        width: 20%;
+    }
+
+    .carro_producto_pc .cantidad_producto{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cantidad_select_pc{
+        width: 80px;
+        height: 30px;
+    }
+    
+    .carro_producto_pc .detalle_producto_pc{
+        width: 20%;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        align-self: center;
+    }
+
+    .precio_producto_pc{
+        width: 20%;
+        text-align: center;
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .eliminar_producto_pc{
+        font-size: 30px;
+        position: absolute;
+        right: -3%;
+        top: 42%;
+    }
+
+    .barra_inferior_carro_pc{
+        display: flex;
+        justify-content: space-evenly;
+        background-color:rgb(158, 158, 158);
+        margin-bottom: 20px; 
+    }
+
+    .barra_inferior_carro_pc p{
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: black;
+    }
+    
+/*  de la botonera hecha exclusivamente para pc
+    .botonera_carro_pc{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+*/
+
+}
+
+
+
+
+
+
+
+
+
+
+                                                    /*version pc*/
+
 
 
 /********** Main lucas ************/
