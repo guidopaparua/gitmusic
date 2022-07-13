@@ -62,6 +62,10 @@ body{
     background-color:rgb(233, 233, 233);
 }
 
+body{
+    background-color:rgb(233, 233, 233);
+}
+
 .carrito{
     background-color:white;
     width: 98%;
@@ -180,6 +184,7 @@ body{
     font-size: 18px;
     align-self: center;
 }
+<<<<<<< HEAD
 
 .boton_compra{
     display: flex;
@@ -317,5 +322,7 @@ body{
                                                     /*version pc*/
 
 
+=======
+>>>>>>> dca55eed4f428bd4031d8d3c193a7657039a9b32
 
 /********** Main lucas ************/
