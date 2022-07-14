@@ -39,7 +39,7 @@ header {
     }
     
     .menu-container {
-        display: flex;
+        display: none;
     }
     
     .logo-bar-container {
@@ -52,6 +52,7 @@ header {
     
     .logo {
         width: 50%;
+        
     }
     
     .search-button-container{
@@ -93,31 +94,32 @@ header {
         display: flex;
         padding: 5px;
         border-radius: 5px;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         align-items: center;
         justify-content: center;
     }
 
     main {
-        background-color: darkgray;
-    }
-
+        width: 90%;
+        margin: 0 auto;
+      }
+      
       main section article {
+        background-color: darkgray;
         margin: 10px 0px;
       }
       
       main section article img {
         width: 100%;
       }
-
-    .discount {
+      
+      main section article i,
+      .discount {
         color: #39b54a;
-    }
-
-  
-
-   main section article i {
+      }
+      
+      main section article i {
         display: block;
         font-size: 16px;
         padding: 5px;
@@ -130,6 +132,20 @@ header {
         right: 20px;
         top: -15px;
       }
+      
+      main section h3 {
+        margin: 20px 0px;
+      }
+      
+      article div.main-article {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        border-top: 1px solid #ebebeb;
+        position: relative;
+        padding: 15px;
+      }
       .products {
         display: flex;
         flex-direction: row;
@@ -137,4 +153,76 @@ header {
         justify-content: space-between;
         align-items: flex-start;
         width: 45%;
+      }
+
+      footer{
+        display: flex;
+        height: 50px;
+        background-color: grey;
+        width: 100%;
+    }
+
+        .ul-footer {
+            display: flex;
+            justify-content: center;
+        } 
+
+        li{
+            text-align: center;
+        }
+
+      @media (min-width: 361px) {
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        ul {
+            /* border: 3px solid orange; */
+            display: flex;
+            width: 45%;
+            padding: 5px;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        main section article .description {
+          display: block;
+        }
+      
+        main section article {
+          box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+      
+        main section div.products {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+      
+        main section div.products article {
+          width: 45%;
+        }
+      
+        .price,
+        .discount {
+          width: 50%;
+        }
+
+        .burger-menu {
+            display: none;
+        }
+
+        /* .a-menu { */
+            /* color: red; */
+        /* } */
+      }
+      
+      @media (min-width: 769px) {
+        main section div.products article {
+          width: 22%;
+        }
       }
