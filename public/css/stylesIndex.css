@@ -5,6 +5,7 @@
 
 h3 {
     font-size: 24px;
+    
   }
   
   p {
@@ -19,10 +20,15 @@ img {
     width: 100%;
 }
 
+body {
+
+}
+
 header {
     display: flex;
     flex-direction: column;
     background-color: grey;
+    padding: 5px;
 }
 
     /********** HEADER ************/
@@ -103,8 +109,14 @@ header {
     main {
         width: 90%;
         margin: 0 auto;
+        padding: 5px;
       }
       
+      .last-visit {
+        display: flex;
+        justify-content: center;
+      }
+
       main section article {
         background-color: darkgray;
         margin: 10px 0px;
@@ -171,7 +183,7 @@ header {
             text-align: center;
         }
 
-      @media (min-width: 361px) {
+      @media (min-width: 768px) {
         .menu-container {
             display: flex;
             justify-content: space-between;
@@ -221,7 +233,7 @@ header {
         /* } */
       }
       
-      @media (min-width: 769px) {
+      @media (min-width: 1024px) {
         main section div.products article {
           width: 22%;
         }
