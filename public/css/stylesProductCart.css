@@ -56,7 +56,7 @@ header{
 
 /********** Main lucas ************/ 
 
-                                                    /*version celular*/
+/*version celular*/
 
 body{
     background-color:rgb(233, 233, 233);
@@ -184,7 +184,6 @@ body{
     font-size: 18px;
     align-self: center;
 }
-<<<<<<< HEAD
 
 .boton_compra{
     display: flex;
@@ -195,9 +194,9 @@ body{
     margin-top: 10px;
 }
 
-                                                    /*version celular*/
+/*version celular*/
 
-                                                    /*version pc*/
+/*version pc*/
 
 .pc{
     display: none;
@@ -208,7 +207,7 @@ body{
     .pc{
         display: block;
     }
-
+    
     .inicio_carrito_pc p{
         padding-left: 10%;
         font-size: 30px;
@@ -298,31 +297,9 @@ body{
         padding-bottom: 10px;
         color: black;
     }
-    
-/*  de la botonera hecha exclusivamente para pc
-    .botonera_carro_pc{
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-*/
-
 }
+/*version pc*/
 
 
-
-
-
-
-
-
-
-
-                                                    /*version pc*/
-
-
-=======
->>>>>>> dca55eed4f428bd4031d8d3c193a7657039a9b32
 
 /********** Main lucas ************/
