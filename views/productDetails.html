@@ -15,10 +15,12 @@
 </head>
 <body>
     <header>
+
         <div class="logo-container">
             <div class="logo-bar-container">
                 <div class="logo">
                     <img src="/images/" alt="">
+                    <h1>LOGO</h1>
                 </div>
                 <div class="search-button-container">
                     <div class="search-container">
@@ -26,28 +28,29 @@
                         <button><i class="fas fa-search"></i></button>
                     </div>
                 </div>
+                <div class="burger-container">
+                    <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-container">
+                <ul>
+                    <li><a class="a-menu" href="#">Categorías</a></li>
+                    <li><a class="a-menu" href="#">Ofertas</a></li>
+                    <li><a class="a-menu" href="#">Tu estilo musical</a></li>
+                </ul>
+    
+                <ul>
+                    <li><a class="a-menu" href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
+                    <li><a class="a-menu" href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a class="a-menu" href="/productCart">Carrito<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
             </div>
             <div class="welcome-container">
                 <h2 class="welcome-title"><i class="fa-solid fa-guitar-electric"></i>Los instrumentos que te gustan y al mejor precio</h2>
             </div>
-        </div>
-        <div class="burger-container">
-            <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-            </div>
-        </div>
-        <div class="menu-container">
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Consejos</a></li>
-                <li><a href="#">Nuestro WhatsApp</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Carrito<i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
         </div>
     </header>
     <main>
@@ -55,11 +58,21 @@
             <img src="/images/bajoFender.webp">
             <div>
                 <h2 class="title">Bajo Fender</h2>
-                <p class="price">$1,199.99</p>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="botonera">
+                    <p class="price">$1,199.99</p>
+                <button id="send" class="cart"><i class="fas fa-truck"></i>Agregar al carro</button>
+                </div>
             </div>
         </div>
     </main>
     
+    <footer>
+        <ul class="ul-footer">
+            <li>Nuestro WhatsApp</li>
+            <li><h4>Muchas gracias por tu visita!</h4></li>
+            <li>Soporte</li>
+        </ul>
+    </footer>
 </body>
 </html>
