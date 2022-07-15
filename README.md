@@ -1,4 +1,4 @@
-# **Grupo 6, unnamed**
+# **Git Music**
 # Temática: Venta de instrumentos y música.
 #### **Nuestro Público Objetivo:** 
 Este proyecto busca ser utilizado por cualquier entusiasta de la música que quiera adentrarse en el lado del artista, dándole acceso simplificado a la compra de instrumentos.
