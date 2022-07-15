@@ -19,4 +19,18 @@ Papa Rúa Guido: Argentino, 26 años, estudiante de Medicina.
 Los siguientes sitios web fueron elegidos por el grupo porque representan una insipiración ya sea por la presentación, la disposición visual de los elementos, la interfaz del usuario, o simplemente porque ofrecen productos a los que apuntamos vender en nuestro sitio.
 
 Enlace de Trello: https://trello.com/grupo6tn29
+\
+retro:\
 
+Que problemas tuvimos:\
+organizacion para tener un trabajo mas "grupal"\
+mala distribucion de las tareas\
+mala organizacion de tiempo\
+
+Qué hicimos bien:\
+cada uno cumplio con lo que se le pidio\
+el compromizo\
+
+Que podemos mejorar:\
+mejorar el manejo del tiempo\
+unirnos como grupo
