@@ -10,8 +10,9 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use(express.static(publicPath));
 
-app.listen(3030, ()=>{
-    console.log("Servidor iniciado en: http://localhost:3030");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log("Servidor iniciado en: http://localhost:" + port);
 });
 app.get("/", (req, res)=>{
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
