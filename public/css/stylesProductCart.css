@@ -11,52 +11,8 @@ p {
     font-size: 12px;
 }
 
-
-/********** HEADER ************/
-
-header {
-    background-color: grey;
-}
-
-.burger-container {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-.burger-menu {
-    background-color: black;
-    color: white;
-    display: flex;
-    padding: 5px;
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-}
-
-/********** HEADER ************/
-/********** HEADER lucas ************/
-
-header{
-    display: flex;
-}
-
-.user_cart{
-    flex-grow: 0.2;
-}
-
-.menu_header{
-    flex-grow: 0.8;
-}
-
-
-/********** HEADER lucas ************/
-
-/********** Main lucas ************/ 
-
-/*version celular*/
+/** HEADER AQUI */
+/** FIN DEL HEADER**/
 
 body{
     background-color:rgb(233, 233, 233);

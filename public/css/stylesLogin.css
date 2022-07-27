@@ -5,21 +5,9 @@
     font-family: "Roboto";
 }
 
-header {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: grey;
-    padding: 0 20px 0 20px;
-    align-items: center;
-}
+/** HEADER AQUI */
+/** FIN DEL HEADER**/
 
-.right-logo{
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
 
 main{
     display: flex;
