@@ -1,21 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
 
 *{
   box-sizing: content-box;
-  font-family: "Roboto";
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: black;
-  color: #FFFFFF;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-}
-
+/** HEADER AQUI */
+/** FIN DEL HEADER**/
 
 .container-principal{
   padding: 2rem;
