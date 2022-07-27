@@ -2,9 +2,9 @@
   "name": "grupo_6_proyectomusica",
   "version": "1.0.0",
   "description": "Este proyecto busca ser utilizado por cualquier entusiasta de la música que quiera adentrarse en el lado del artista, dándole acceso simplificado a la compra de instrumentos.\r ## **Integrantes**\r Hamwee Santiago: Argentino, 19 años, sin experiencia en programación. De Boca.\\\r Seijas Lucas: Argentino, 22 años.\\\r Reyes Monica: Colombiana, 22 años.\\\r Grasso Juan Pablo, 21 años.\\\r Papa Rúa Guido: Argentino, 26 años, estudiante de Medicina.",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
