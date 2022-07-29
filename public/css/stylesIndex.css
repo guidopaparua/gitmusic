@@ -38,6 +38,45 @@
   gap: 15px;
   /* border: solid 1px yellow; */
 }
+.main-searchbox{
+  width: fit-content;
+  position: relative;
+}
+.search{
+  background-color: lightslategray;
+  color: black;
+  /* border: solid 1px #FFF; */
+  border-radius: 5px;
+  width: 200px;
+  height: 32px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+.search:focus{
+  font-weight:lighter;
+  color: #222222;
+}
+
+.search::placeholder{
+  color: black;
+}
+
+.lupita-container{
+  position: absolute;
+  background: transparent;
+  right: 6px;
+  top: 6px;
+  border: none;
+  color: wheat;
+}
+
+.logo-lupita{
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}
+
 .header-navbar{
   display: flex;
   color: white;
