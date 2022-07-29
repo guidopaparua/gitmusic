@@ -5,10 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/** HEADER AQUI */
-/** FIN DEL HEADER**/
-
-
 main{
     display: flex;
     height: 600px;
