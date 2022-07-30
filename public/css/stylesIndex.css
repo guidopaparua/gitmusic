@@ -80,7 +80,7 @@ article div.main-article {
   width: 45%;
 }
 
-footer {
+/* footer {
   display: flex;
   height: 50px;
   background-color: grey;
@@ -90,7 +90,7 @@ footer {
 .ul-footer {
   display: flex;
   justify-content: center;
-}
+} */
 
 
 @media (min-width: 768px) {

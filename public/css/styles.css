@@ -114,6 +114,22 @@
 
 /** INICIO FOOTER **/
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
 
+.footer-top-container{
+    border: 1px solid red;
+}
+
+.footer-item{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-copyright-container{
+    border: 1px solid yellow;
+}
 
 /** FIN FOOTER **/
