@@ -104,4 +104,16 @@
     color: wheat;
 }
 
+.navbar-item:hover{
+    text-decoration: underline;
+    text-decoration-color: #faf900;
+    transition: 500ms ease;
+}
+
 /** FIN HEADER **/
+
+/** INICIO FOOTER **/
+
+
+
+/** FIN FOOTER **/
