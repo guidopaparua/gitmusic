@@ -24,10 +24,15 @@
     /* border: solid 1px palevioletred; */
 }
 
-.header-top-container main-logo {
+.header-top-container main-logo-container {
     display: flex;
     width: 60%;
     height: 100%;
+}
+
+.main-logo {
+    text-decoration: none;
+    color: wheat;
 }
 
 .header-user {
