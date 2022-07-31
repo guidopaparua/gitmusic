@@ -80,19 +80,6 @@ article div.main-article {
   width: 45%;
 }
 
-/* footer {
-  display: flex;
-  height: 50px;
-  background-color: grey;
-  width: 100%;
-}
-
-.ul-footer {
-  display: flex;
-  justify-content: center;
-} */
-
-
 @media (min-width: 768px) {
 
   main section article .description {

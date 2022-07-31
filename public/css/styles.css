@@ -55,12 +55,12 @@
 .search {
     background-color: lightslategray;
     color: black;
-    /* border: solid 1px #FFF; */
     border-radius: 5px;
     width: 200px;
     height: 32px;
     padding-left: 5px;
     box-sizing: border-box;
+    /* border: solid 1px #FFF; */
 }
 
 .search:focus {
@@ -85,6 +85,11 @@
     font-size: 20px;
     align-items: center;
     display: flex;
+}
+
+.cart-logo {
+    text-decoration: none;
+    color: wheat;
 }
 
 .header-navbar {
@@ -117,19 +122,44 @@
 .footer-container{
     display: flex;
     flex-direction: column;
+    background-color: #e5e6e5;
+    height: 200px;
 }
 
-.footer-top-container{
-    border: 1px solid red;
+.footer-top-list{
+    display: flex;
+    height: 70%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    /* border: 1px solid red; */
 }
+
 
 .footer-item{
     text-decoration: none;
     list-style: none;
 }
 
+.footer-item img{
+    height: 100px;
+    width: 200px;
+}
+
+
+.contact-list{
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
 .footer-copyright-container{
-    border: 1px solid yellow;
+    display: flex;
+    padding: 15px;
+    font-size: 15px;
+    height: 30%;
+    border-top: 1.5px solid black;
+    /* border: 1px solid yellow; */
 }
 
 /** FIN FOOTER **/
