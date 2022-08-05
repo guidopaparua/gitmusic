@@ -4,6 +4,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
 h3 {
     font-size: 24px;
 }
@@ -63,15 +70,23 @@ article div.main-article {
     padding: 15px;
 }
 
+
 .product {
     display: flex;
     flex-direction: column;
     position: relative;
     padding-bottom: 50px;
+    top: 20px;
+    margin-bottom: 40px;
+}
+
+.product .title {
+    margin-top: 20px
 }
 
 .product .description {
-    font-size: 18px
+    font-size: 18px;
+    margin-top: 20px
 }
 
 .product img {
