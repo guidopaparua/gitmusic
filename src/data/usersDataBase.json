@@ -1,0 +1,11 @@
+[
+    {
+        "id": ,
+        "name": "",
+        "lastname": "",
+        "email": "",
+        "password": "",
+        "category": "", /*comprador o vendedor*/
+        "image": 
+    }
+]

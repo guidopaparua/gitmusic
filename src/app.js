@@ -4,8 +4,8 @@ const path = require('path');
 
 const mainRouter = require('./routes/mainRouter');
 const loginRouter = require('./routes/loginRouter');
-const productCartRouter = require('./routes/productCartRouter');
-const productDetailsRouter = require('./routes/productDetailsRouter');
+// const productCartRouter = require('./routes/productCartRouter');
+const productsRouter = require('./routes/productsRouter');
 const registerRouter = require('./routes/registerRouter');
 
 app.set('view engine', 'ejs');
@@ -20,6 +20,6 @@ app.listen(port, () => {
 
 app.use('/', mainRouter);
 app.use('/login', loginRouter);
-app.use('/productCart', productCartRouter);
-app.use('/productDetails', productDetailsRouter);
+// app.use('/productCart', productsRouter);
+app.use('/products', productsRouter);
 app.use('/register', registerRouter);

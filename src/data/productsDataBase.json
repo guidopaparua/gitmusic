@@ -1,0 +1,12 @@
+[
+    {
+        "id": ,
+        "name": "",
+        "product type": "", /*instrumento o vinilo*/
+        "price": ,
+        "discount": ,
+        "category": "", /*si es instrumento, cual? si es vinilo, que genero?*/
+        "description": "",
+        "image": ""
+    }
+]
