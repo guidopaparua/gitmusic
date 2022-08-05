@@ -1,12 +1,22 @@
 [
     {
-        "id": ,
-        "name": "",
-        "product type": "", /*instrumento o vinilo*/
-        "price": ,
-        "discount": ,
-        "category": "", /*si es instrumento, cual? si es vinilo, que genero?*/
-        "description": "",
-        "image": ""
+        "id":"1" ,
+        "name":"Batería Tama",
+        "product type": "instrumento",
+        "price":"1,499.99" ,
+        "discount":"15" ,
+        "category": "bateria", 
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image": "images/tamaDrum.webp"
+    },
+    {
+        "id":"2" ,
+        "name":"Guitarra Fender",
+        "product type": "instrumento",
+        "price":"1,999.99" ,
+        "discount":"30" ,
+        "category": "bateria", 
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image": "images/fenderGuitar.webp"
     }
 ]
