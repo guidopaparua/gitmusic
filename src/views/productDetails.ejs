@@ -12,12 +12,12 @@
     <%- include ('./partials/header')%> 
     <main>
         <div class="product">
-            <img src="/images/bajoFender.webp">
+            <img src='<%= product.image %>'> 
             <div>
-                <h2 class="title">Bajo Fender</h2>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 class="title"><%= product.name %> </h2>
+                <p class="description"><%= product.description %> </p>
                 <div class="botonera">
-                    <p class="price">$1,199.99</p>
+                    <p class="price">$<%= product.price %> </p>
                 <button id="send" class="cart"><i class="fas fa-truck"></i>Agregar al carro</button>
                 </div>
             </div>
