@@ -23,7 +23,7 @@ const controller = {
 
 	// (get) Create - Formulario para crear
 	create: (req, res) => {
-		res.render('product-create-form')
+		res.render('productCreateForm')
 	},
 	
 	// (post) Create -  Método para guardar la info
