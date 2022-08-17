@@ -4,7 +4,6 @@ const path = require('path');
 
 const mainRouter = require('./routes/mainRouter');
 const loginRouter = require('./routes/loginRouter');
-const productCartRouter = require('./routes/productCartRouter');
 const productsRouter = require('./routes/productsRouter');
 const registerRouter = require('./routes/registerRouter');
 
@@ -20,6 +19,5 @@ app.listen(port, () => {
 
 app.use('/', mainRouter);
 app.use('/login', loginRouter);
-app.use('/productCart', productsRouter);
 app.use('/products', productsRouter);
 app.use('/register', registerRouter);

@@ -22,7 +22,8 @@ router.get('/', productsController.index);
 
 /*** Crear un producto ***/ 
 router.get('/create', productsController.create);
-router.post('/create', productsController.store);
+router.post('/', productsController.store);
+router.get('/cart', productsController.cart);
 
 /*** Devolver un producto ***/ 
 router.get('/:id', productsController.detail);
@@ -33,6 +34,7 @@ router.put('/:id', productsController.update);
 
 /*** Eliminar un producto***/ 
 router.delete('/:id', productsController.destroy);
+
 
 
 module.exports = router;
