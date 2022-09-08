@@ -7,7 +7,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const controller = {
 	// (get) Root - Mostrar todos los productos
 	index: (req, res) => {
-		res.render('products',{
+		res.render('products/products',{
 			 productsSent: products 
 		})
 	},
@@ -23,7 +23,7 @@ const controller = {
 
 	// (get) Create - Formulario para crear
 	create: (req, res) => {
-		res.render('product-create-form')
+		res.render('productCreateForm')
 	},
 	
 	// (post) Create -  Método para guardar la info
@@ -41,7 +41,7 @@ const controller = {
 		}
 		products.push(newProduct);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, "  "));
-		res.redirect("/products/")
+		res.redirect("/products/");
 	},
 
 	// (get) Update - Formulario para editar
@@ -81,7 +81,7 @@ const controller = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
 		
-		res.redirect("/products/")
+		res.redirect("/products/");
 	},
 
 	// Delete - Delete one product from DB
@@ -93,7 +93,11 @@ const controller = {
 		
 		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
 
-		res.redirect("/products/")	
+		res.redirect("/products/");
+	},
+	
+	cart : (req, res) => {
+		res.render('productCart');
 	}
 };
 
