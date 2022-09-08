@@ -7,6 +7,9 @@ const loginRouter = require('./routes/loginRouter');
 // const productCartRouter = require('./routes/productCartRouter');
 const productsRouter = require('./routes/productsRouter');
 const registerRouter = require('./routes/registerRouter');
+//DATABASE
+const ProductsDbRouter = require('./routes/ProductsDbRouter');
+const UsersDbRouter = require('./routes/UsersDbRouter');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -23,3 +26,6 @@ app.use('/login', loginRouter);
 // app.use('/productCart', productsRouter);
 app.use('/products', productsRouter);
 app.use('/register', registerRouter);
+//DATABASE
+app.use('/Products', ProductsDbRouter);
+app.use('/Users', UsersDbRouter);

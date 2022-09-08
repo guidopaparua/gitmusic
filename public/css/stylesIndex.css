@@ -24,6 +24,10 @@ main {
   padding: 5px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .last-visit {
   display: flex;
   justify-content: center;
