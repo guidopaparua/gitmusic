@@ -6,7 +6,8 @@
 
 h3 {
   font-size: 24px;
-
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -28,23 +29,30 @@ ul {
   list-style-type: none;
 }
 
-.last-visit {
+.productosPopulares {
+  display: flex;
+  justify-content: center;
+}
+
+.offers{
   display: flex;
   justify-content: center;
 }
 
 main section article {
-  background-color: darkgray;
-  margin: 10px 0px;
+  background-color: wheat;
+  margin: 5px 0px;
 }
 
 main section article img {
   width: 100%;
 }
 
-main section article i,
-.discount {
-  color: #39b54a;
+.frase {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: wheat;
 }
 
 main section article i {
@@ -70,9 +78,8 @@ article div.main-article {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  border-top: 1px solid #ebebeb;
   position: relative;
-  padding: 15px;
+  padding: 5px;
 }
 
 .products {
@@ -82,6 +89,16 @@ article div.main-article {
   justify-content: space-between;
   align-items: flex-start;
   width: 45%;
+}
+
+.crearP {
+  color: wheat;
+  font-size: 15px;
+}
+
+.listaP {
+  color: wheat;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
