@@ -22,7 +22,15 @@
                     <h3 class="masPopulares">MÁS POPULARES</h3>
                     <section class="productosPopulares">
                         <div class="products">
-                            <article>
+                            <% instrumentos.forEach(element=>{%>
+                                <article>
+                                    <img src="<%= element.image %>">
+                                    <div class="main-article">
+                                        <p class="price"> <%= element.price %> </p>
+                                    </div>
+                                </article>
+                                <% }) %>  
+                            <!-- <article>
                                 <img src="images/tamaDrum.webp" alt="Batería" class="product_img">
                                 <div class="main-article">
                                     <p class="price">$1,499.99</p>
@@ -52,7 +60,7 @@
                                     <p class="price">$1,499.99</p>
                                     <h4 class="description">Batería Tama</h4>
                                 </div>
-                            </article>
+                            </article> -->
                         </div>
                     </section>
                 </div>

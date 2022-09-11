@@ -2,7 +2,7 @@
     {
         "id":"1" ,
         "name":"Batería Tama",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,499.99" ,
         "discount":"15" ,
         "category": "Baterías", 
@@ -12,7 +12,7 @@
     {
         "id":"2" ,
         "name":"Guitarra Fender",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,999.99" ,
         "discount":"30" ,
         "category": "Guitarras", 
@@ -22,7 +22,7 @@
     {
         "id":"3" ,
         "name":"Bajo Fender",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,999.99" ,
         "discount":"10" ,
         "category": "Bajos", 
@@ -32,7 +32,7 @@
     {
         "id":"4" ,
         "name":"Yamaha F335 Acústica Guitarra Negra",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"999.99" ,
         "discount":"" ,
         "category": "Guitarras", 
@@ -42,7 +42,7 @@
     {
         "id":"5" ,
         "name":"Gibson ES-339 Guitarra Electrica Blueberry Burst",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"3,999.99" ,
         "discount":"" ,
         "category": "Guitarras", 
@@ -52,7 +52,7 @@
     {
         "id":"6" ,
         "name":"Fender Vintage Amplificador '65",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,500.00" ,
         "discount":"" ,
         "category": "Amplificadores", 
@@ -62,7 +62,7 @@
     {
         "id":"7" ,
         "name":"Marshall Amplificador 40W 1x12 Guitar ",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,000.00" ,
         "discount":"" ,
         "category": "Amplificadores", 
@@ -72,7 +72,7 @@
     {
         "id":"8" ,
         "name":"Bateria Electronica Alesis Set",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,399.99" ,
         "discount":"" ,
         "category": "Baterías", 
@@ -82,7 +82,7 @@
     {
         "id":"9" ,
         "name":"TAMA Metalworks Redoblante 14 x 6.5",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"299.99" ,
         "discount":"" ,
         "category": "Baterías", 
@@ -92,7 +92,7 @@
     {
         "id":"10" ,
         "name":"DW Redoblante 14 x 6.5",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"499.99" ,
         "discount":"" ,
         "category": "Baterías", 
@@ -102,7 +102,7 @@
     {
         "id":"11" ,
         "name":"Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"599.99" ,
         "discount":"" ,
         "category": "Bajos", 
@@ -111,7 +111,7 @@
     }, {
         "id":"12" ,
         "name":"Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico Azul",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"699.99" ,
         "discount":"" ,
         "category": "Bajos", 
@@ -120,7 +120,7 @@
     }, {
         "id":"13" ,
         "name":"Taylor GS Bajo Acoustico-Electrico",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"749.99" ,
         "discount":"" ,
         "category": "Bajos", 
@@ -129,7 +129,7 @@
     }, {
         "id":"14" ,
         "name":"Yamaha Saxofón",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"2,999.99" ,
         "discount":"" ,
         "category": "Saxofones", 
@@ -138,7 +138,7 @@
     }, {
         "id":"15" ,
         "name":"Allora Saxofón Tenor",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"2,999.99" ,
         "discount":"" ,
         "category": "Saxofones", 
@@ -147,7 +147,7 @@
     }, {
         "id":"16" ,
         "name":"Nord Teclado Rojo",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"4,999.99" ,
         "discount":"" ,
         "category": "Teclados", 
@@ -156,7 +156,7 @@
     }, {
         "id":"17" ,
         "name":"Yamaha Teclado",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"2,699.99" ,
         "discount":"" ,
         "category": "Teclados", 
@@ -165,7 +165,7 @@
     }, {
         "id":"18" ,
         "name":"Vox Continentall Teclado",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"1,699.99" ,
         "discount":"" ,
         "category": "Teclados", 
@@ -174,7 +174,7 @@
     }, {
         "id":"19" ,
         "name":"DW Collectors 4 piezas Batería",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"3,999.99" ,
         "discount":"" ,
         "category": "Baterías", 
@@ -183,7 +183,7 @@
     }, {
         "id":"20" ,
         "name":"Ludwing Clásica Maple Bateria",
-        "product type": "instrumento",
+        "productType": "instrumento",
         "price":"2,599.99" ,
         "discount":"" ,
         "category": "Baterías", 
