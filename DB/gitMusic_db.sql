@@ -118,3 +118,73 @@ CREATE INDEX `fk_orders_users1_idx` ON `mydb`.`orders` (`users_id` ASC) VISIBLE;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+
+
+/*    otro
+*/
+
+
+
+create database dh_gitmusic
+use master
+
+CREATE TABLE IF NOT EXISTS usertype (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` TEXT NOT NULL,
+  PRIMARY KEY (`id`))
+
+
+CREATE TABLE IF NOT EXISTS users (
+  `id` INT(11) NOT NULL,
+  `name` TEXT NOT NULL,
+  `userType` INT(11) NOT NULL,
+  PRIMARY KEY (`id`),
+    FOREIGN KEY (`userType`)
+    REFERENCES `gitmusic`.`usertype` (`id`))
+
+CREATE TABLE IF NOT EXISTS order (
+  `id` INT(11) NOT NULL,
+  `date` DATE NOT NULL,
+  `state` TEXT NOT NULL,
+  `coments` TEXT NULL DEFAULT NULL,
+  `userCode` INT(11) NOT NULL,
+  PRIMARY KEY (`id`),
+    FOREIGN KEY (`userCode`)
+    REFERENCES `gitmusic`.`users` (`id`))
+
+CREATE TABLE IF NOT EXISTS orderdetails (
+  `orderID` INT(11) NOT NULL,
+  `cantidad` INT(11) NOT NULL,
+  `productID` INT(11) NOT NULL,
+  PRIMARY KEY (`orderID`, `productID`),
+    FOREIGN KEY (`productID`)
+    REFERENCES `gitmusic`.`products` (`id`),
+    FOREIGN KEY (`orderID`)
+    REFERENCES `gitmusic`.`order` (`id`))
+
+CREATE TABLE IF NOT EXISTS products (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` TEXT NOT NULL,
+  `product_type` INT(11) NOT NULL,
+  `discount` INT(11) NULL DEFAULT 0,
+  `category` INT(11) NOT NULL,
+  `description` TEXT NOT NULL,
+  `price` INT(11) NOT NULL,
+  PRIMARY KEY (`id`),
+    FOREIGN KEY (`category`)
+    REFERENCES `gitmusic`.`category` (`id`),
+    FOREIGN KEY (`product_type`)
+    REFERENCES `gitmusic`.`producttype` (`id`))
+
+CREATE TABLE IF NOT EXISTS producttype (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` TEXT NOT NULL,
+  PRIMARY KEY (`id`))
+
+CREATE TABLE IF NOT EXISTS category (
+  `id` INT(11) NOT NULL,
+  `name` TEXT NOT NULL,
+  `description` TEXT NOT NULL,
+  PRIMARY KEY (`id`))
