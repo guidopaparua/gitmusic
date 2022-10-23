@@ -23,14 +23,16 @@
                     <section class="productosPopulares">
                         <div class="products">
                             <% instrumentos.forEach(element=>{%>
-                                <article>
-                                    <img src="<%= element.image %>">
-                                    <div class="main-article">
-                                        <p class="price"> <%= element.price %> </p>
-                                    </div>
-                                </article>
-                                <% }) %>  
-                            <!-- <article>
+                                    <article>
+                                        <img src="<%= element.image %>">
+                                        <div class="main-article">
+                                            <p class="price">
+                                                <%= element.price %>
+                                            </p>
+                                        </div>
+                                    </article>
+                                <% }) %>
+                                    <!-- <article>
                                 <img src="images/tamaDrum.webp" alt="Batería" class="product_img">
                                 <div class="main-article">
                                     <p class="price">$1,499.99</p>
@@ -73,22 +75,22 @@
                 <h3>Acá tenemos que ver que poner</h3>
                 <section class="offers">
                     <div class="products">
-                        
-                     </div>
-                 </section>
-                 <h3>CRUD</h3>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/Products/create" class="crearP">Crear producto</a>
-                    </li>
-                    <li>
-                        <a href="/Products" class="listaP">Listado de productos</a>
-                    </li>
-                </ul>
-            </nav>
+
+                    </div>
+                </section>
+                <h3>CRUD</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/Products/create" class="crearP">Crear producto</a>
+                        </li>
+                        <li>
+                            <a href="/Products" class="listaP">Listado de productos</a>
+                        </li>
+                    </ul>
+                </nav>
             </main>
-            <%- include ('./partials/footer')%> 
+            <%- include ('./partials/footer')%>
     </body>
 
 </html>
