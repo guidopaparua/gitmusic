@@ -42,8 +42,7 @@ header {
 }
 
 .main-logo {
-    text-decoration: none;
-    color: wheat;
+    height:60px;
 }
 
 .header-user {
