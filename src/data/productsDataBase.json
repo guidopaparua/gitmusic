@@ -37,7 +37,7 @@
         "discount":"" ,
         "category": "Guitarras", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/yamahaAcustica.jpg"
     },
     {
         "id":"5" ,
@@ -47,7 +47,7 @@
         "discount":"" ,
         "category": "Guitarras", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/guitarraGibson.webp"
     },
     {
         "id":"6" ,
@@ -57,7 +57,7 @@
         "discount":"" ,
         "category": "Amplificadores", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/amplificadorFender.webp"
     },
     {
         "id":"7" ,
@@ -67,7 +67,7 @@
         "discount":"" ,
         "category": "Amplificadores", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/amplificadorMarshall.webp"
     },
     {
         "id":"8" ,
@@ -77,7 +77,7 @@
         "discount":"" ,
         "category": "Baterías", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/bateriaElectricaAlesis.webp"
     },
     {
         "id":"9" ,
@@ -87,7 +87,7 @@
         "discount":"" ,
         "category": "Baterías", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/redoblanteTama.jpg"
     },
     {
         "id":"10" ,
@@ -97,7 +97,7 @@
         "discount":"" ,
         "category": "Baterías", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/redoblanteDw.webp"
     },
     {
         "id":"11" ,
@@ -107,8 +107,9 @@
         "discount":"" ,
         "category": "Bajos", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/bajoIbanez.jpg"
+    }, 
+    {
         "id":"12" ,
         "name":"Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico Azul",
         "productType": "instrumento",
@@ -116,8 +117,9 @@
         "discount":"" ,
         "category": "Bajos", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/bajoIbanezBlue.webp"
+    }, 
+    {
         "id":"13" ,
         "name":"Taylor GS Bajo Acoustico-Electrico",
         "productType": "instrumento",
@@ -125,8 +127,9 @@
         "discount":"" ,
         "category": "Bajos", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/bajoAcusticoTaylor.webp"
+    },
+    {
         "id":"14" ,
         "name":"Yamaha Saxofón",
         "productType": "instrumento",
@@ -134,8 +137,9 @@
         "discount":"" ,
         "category": "Saxofones", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/yamahaSaxo.jpg"
+    }, 
+    {
         "id":"15" ,
         "name":"Allora Saxofón Tenor",
         "productType": "instrumento",
@@ -143,8 +147,9 @@
         "discount":"" ,
         "category": "Saxofones", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/alloraSaxo.webp"
+    }, 
+    {
         "id":"16" ,
         "name":"Nord Teclado Rojo",
         "productType": "instrumento",
@@ -152,8 +157,9 @@
         "discount":"" ,
         "category": "Teclados", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/tecladoNord.webp"
+    }, 
+    {
         "id":"17" ,
         "name":"Yamaha Teclado",
         "productType": "instrumento",
@@ -161,8 +167,9 @@
         "discount":"" ,
         "category": "Teclados", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/tecladoYamaha.webp"
+    }, 
+    {
         "id":"18" ,
         "name":"Vox Continentall Teclado",
         "productType": "instrumento",
@@ -171,7 +178,8 @@
         "category": "Teclados", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "image": "/images/"
-    }, {
+    }, 
+    {
         "id":"19" ,
         "name":"DW Collectors 4 piezas Batería",
         "productType": "instrumento",
@@ -179,8 +187,9 @@
         "discount":"" ,
         "category": "Baterías", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
-    }, {
+        "image": "/images/dwCollectorsDrum.webp"
+    }, 
+    {
         "id":"20" ,
         "name":"Ludwing Clásica Maple Bateria",
         "productType": "instrumento",
@@ -188,6 +197,6 @@
         "discount":"" ,
         "category": "Baterías", 
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image": "/images/"
+        "image": "/images/ludwingBateria.webp"
     }
 ]
