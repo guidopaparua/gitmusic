@@ -23,13 +23,13 @@
                     <section class="productosPopulares">
                         <div class="products">
                             <% instrumentos.forEach(element=>{%>
-                                    <article>
+                                    <article> <a href="/products/">
                                         <img src="<%= element.image %>">
                                         <div class="main-article">
                                             <p class="price">
                                                 <%= element.price %>
                                             </p>
-                                        </div>
+                                        </div></a>
                                     </article>
                                 <% }) %>
                                     <!-- <article>
