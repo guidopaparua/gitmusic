@@ -126,10 +126,6 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 */
 
 
-
-create database dh_gitmusic
-use master
-
 CREATE TABLE IF NOT EXISTS usertype (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `name` TEXT NOT NULL,
@@ -141,6 +137,8 @@ CREATE TABLE IF NOT EXISTS users (
   `name` TEXT NOT NULL,
   `userType` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
+  INDEX `FK_a49bece5-4e0b-4ec6-b151-acc96731ee1e` (`userType` ASC) VISIBLE,
+  CONSTRAINT `FK_a49bece5-4e0b-4ec6-b151-acc96731ee1e`
     FOREIGN KEY (`userType`)
     REFERENCES `gitmusic`.`usertype` (`id`))
 
@@ -151,6 +149,8 @@ CREATE TABLE IF NOT EXISTS order (
   `coments` TEXT NULL DEFAULT NULL,
   `userCode` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
+  INDEX `FK_5a5f20a7-c59f-4f95-912c-a4483e8251b6` (`userCode` ASC) VISIBLE,
+  CONSTRAINT `FK_5a5f20a7-c59f-4f95-912c-a4483e8251b6`
     FOREIGN KEY (`userCode`)
     REFERENCES `gitmusic`.`users` (`id`))
 
@@ -159,8 +159,11 @@ CREATE TABLE IF NOT EXISTS orderdetails (
   `cantidad` INT(11) NOT NULL,
   `productID` INT(11) NOT NULL,
   PRIMARY KEY (`orderID`, `productID`),
+  INDEX `FK_0e82b2e4-aad4-4fa2-919b-7626e39a490d` (`productID` ASC) VISIBLE,
+  CONSTRAINT `FK_0e82b2e4-aad4-4fa2-919b-7626e39a490d`
     FOREIGN KEY (`productID`)
     REFERENCES `gitmusic`.`products` (`id`),
+  CONSTRAINT `FK_53481c60-2ea2-48bf-aa1f-66a1e02f9826`
     FOREIGN KEY (`orderID`)
     REFERENCES `gitmusic`.`order` (`id`))
 
@@ -173,8 +176,12 @@ CREATE TABLE IF NOT EXISTS products (
   `description` TEXT NOT NULL,
   `price` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
+  INDEX `FK_a5e2aab4-e055-4538-bc5d-5460e51f07aa` (`product_type` ASC) VISIBLE,
+  INDEX `FK_28cd9248-731b-4a46-870f-e346f2d3c0aa` (`category` ASC) VISIBLE,
+  CONSTRAINT `FK_28cd9248-731b-4a46-870f-e346f2d3c0aa`
     FOREIGN KEY (`category`)
     REFERENCES `gitmusic`.`category` (`id`),
+  CONSTRAINT `FK_a5e2aab4-e055-4538-bc5d-5460e51f07aa`
     FOREIGN KEY (`product_type`)
     REFERENCES `gitmusic`.`producttype` (`id`))
 
