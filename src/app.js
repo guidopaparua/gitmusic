@@ -27,3 +27,7 @@ app.use('/register', registerRouter);
 //DATABASE
 app.use('/Products', ProductsDbRouter);
 app.use('/Users', UsersDbRouter);
+//ERROR 404
+app.use((req, res, next) => {
+    res.status('404').render('not-found')
+})
