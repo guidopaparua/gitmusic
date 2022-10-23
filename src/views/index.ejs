@@ -23,7 +23,7 @@
                     <section class="productosPopulares">
                         <div class="products">
                             <% instrumentos.forEach(element=>{%>
-                                    <article> <a href="/products/">
+                                    <article> <a href="/products/<%= element.id %>">
                                         <img src="<%= element.image %>">
                                         <div class="main-article">
                                             <p class="price">
