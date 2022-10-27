@@ -12,27 +12,30 @@
         <%- include ('./partials/header')%>
             <main>
                 <!--Primera sección -->
-                <section>
-                    <div class="frase">
-                        Insertar Frase Aquí
-                    </div>
+                <section class="frase">
+                    <h1>
+                        Bienvenido a Git Music
+                    </h1>
                 </section>
                 <!--Segunda sección-->
-                <div>
-                    <h3 class="masPopulares">MÁS POPULARES</h3>
-                    <section class="productosPopulares">
-                        <div class="products">
-                            <% instrumentos.forEach(element=>{%>
-                                    <article> <a href="/products/<%= element.id %>">
-                                        <img src="<%= element.image %>">
-                                        <div class="main-article">
-                                            <p class="price">
-                                                <%= element.price %>
-                                            </p>
-                                        </div></a>
-                                    </article>
-                                <% }) %>
-                                    <!-- <article>
+                <section>
+                    <div class="titulos-productos">
+                        <h3>NUESTROS PRODUCTOS</h3>
+                    </div>
+                    <div class="products">
+                        
+                        <% instrumentos.forEach(element=>{%>
+                            <article> <a href="/products/<%= element.id %>">
+                                    <img src="<%= element.image %>">
+                                    <div class="main-article">
+                                        <p class="price">
+                                            <%= element.price %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+                            <% }) %>
+                                <!-- <article>
                                 <img src="images/tamaDrum.webp" alt="Batería" class="product_img">
                                 <div class="main-article">
                                     <p class="price">$1,499.99</p>
@@ -63,12 +66,11 @@
                                     <h4 class="description">Batería Tama</h4>
                                 </div>
                             </article> -->
-                        </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
                 <!--Tercera sección-->
-                <section>
-                    <div class="banner-publicidad">
+                <section class="banner-publicidad">
+                    <div>
                         Añadir aquí la autopauta
                     </div>
                 </section>

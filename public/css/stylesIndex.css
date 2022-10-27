@@ -20,19 +20,13 @@ img {
 }
 
 main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 5px;
+  margin: 0 !important;
 }
 
 ul {
   list-style-type: none;
 }
 
-.productosPopulares {
-  display: flex;
-  justify-content: center;
-}
 
 .offers{
   display: flex;
@@ -41,7 +35,8 @@ ul {
 
 main section article {
   background-color: wheat;
-  margin: 5px 0px;
+    margin: 30px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
 main section article img {
@@ -53,6 +48,28 @@ main section article img {
   justify-content: center;
   font-size: 25px;
   color: wheat;
+  padding: 200px;
+  background-image: url(../images/recital.jpeg);
+}
+
+.titulos-productos{
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 30px;
+  background: black;
+  color: white;
+}
+
+.products{
+  display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background: black;
+    color: white;
 }
 
 main section article i {
@@ -82,14 +99,6 @@ article div.main-article {
   padding: 5px;
 }
 
-.products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 45%;
-}
 
 .crearP {
   color: wheat;
@@ -111,16 +120,9 @@ article div.main-article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
-  main section div.products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
   main section div.products article {
-    width: 45%;
+    width: 30%;
+    margin: 10px;
   }
 
   .price,
@@ -131,6 +133,7 @@ article div.main-article {
 
 @media (min-width: 1024px) {
   main section div.products article {
-    width: 22%;
+    width: 30%;
+    margin: 10px;
   }
 }
