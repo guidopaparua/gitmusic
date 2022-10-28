@@ -149,7 +149,7 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(47, 51, 47);
+    background-color: rgb(92, 88, 17);
   }
 
 .instrumentos-button {
@@ -158,6 +158,10 @@ header {
     text-decoration: none;
     border: 0;
     font-size: 16px;
+}
+
+.item-desplegable {
+    background-color:  rgb(47, 51, 47);
 }
 
 
