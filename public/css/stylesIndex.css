@@ -110,6 +110,10 @@ article div.main-article {
   font-size: 15px;
 }
 
+.masPopulares {
+  color: wheat
+}
+
 @media (min-width: 768px) {
 
   main section article .description {
@@ -128,6 +132,7 @@ article div.main-article {
   .price,
   .discount {
     width: 50%;
+    color:black;
   }
 }
 
