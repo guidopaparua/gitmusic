@@ -50,7 +50,10 @@ CREATE TABLE IF NOT EXISTS `mydb`.`products` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `description` VARCHAR(180) NOT NULL,
+  `discount` INT NULL,
   `price` VARCHAR(45) NOT NULL,
+  `category` INT NULL,
+  `imagen` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -61,7 +64,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`categories` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `description` VARCHAR(45) NOT NULL,
+  `description` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -69,26 +72,26 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`categories_has_products`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`categories_has_products` (
-  `categories_id` INT NOT NULL,
-  `products_id` INT NOT NULL,
-  PRIMARY KEY (`categories_id`, `products_id`),
-  CONSTRAINT `fk_categories_has_products_categories`
-    FOREIGN KEY (`categories_id`)
-    REFERENCES `mydb`.`categories` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_categories_has_products_products1`
-    FOREIGN KEY (`products_id`)
-    REFERENCES `mydb`.`products` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
 
-CREATE INDEX `fk_categories_has_products_products1_idx` ON `mydb`.`categories_has_products` (`products_id` ASC) VISIBLE;
+CREATE TABLE IF NOT EXISTS `mydb`.`orders` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `date` DATE NULL,
+  `state` TEXT NULL,
+  `coments` TEXT NULL DEFAULT NULL,
+  `users_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `FK_5a5f20a7-c59f-4f95-912c-a4483e8251b6` (`userCode` ASC) VISIBLE,
+  CONSTRAINT `FK_5a5f20a7-c59f-4f95-912c-a4483e8251b6`
+    FOREIGN KEY (`userCode`)
+    REFERENCES `gitmusic`.`users` (`id`))
 
-CREATE INDEX `fk_categories_has_products_categories_idx` ON `mydb`.`categories_has_products` (`categories_id` ASC) VISIBLE;
+/*    ESTADOS
 
+F: FINALIZADO
+C: CANCELADO
+P: EN PROCESO
+
+*/
 
 -- -----------------------------------------------------
 -- Table `mydb`.`orders`
@@ -119,79 +122,52 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+-- final
 
-
-
-/*    otro
-*/
-
-
-CREATE TABLE IF NOT EXISTS usertype (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` TEXT NOT NULL,
-  PRIMARY KEY (`id`))
-
-
-CREATE TABLE IF NOT EXISTS users (
-  `id` INT(11) NOT NULL,
-  `name` TEXT NOT NULL,
-  `userType` INT(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(45) NOT NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(180) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `user_type` int not null,
+  `admin` boolean NOT NULL,
+  PRIMARY KEY (`id`));
+  
+  CREATE TABLE IF NOT EXISTS `products` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `description` VARCHAR(180) NOT NULL,
+  `discount` INT NULL,
+  `price` int NOT NULL,
+  `category` INT not null,
+  `imagen` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `FK_a49bece5-4e0b-4ec6-b151-acc96731ee1e` (`userType` ASC) VISIBLE,
-  CONSTRAINT `FK_a49bece5-4e0b-4ec6-b151-acc96731ee1e`
-    FOREIGN KEY (`userType`)
-    REFERENCES `gitmusic`.`usertype` (`id`))
+  FOREIGN KEY (`category`) REFERENCES categories(id)
+  );
+  
+  
+  CREATE TABLE IF NOT EXISTS `categories` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `description` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
 
-CREATE TABLE IF NOT EXISTS order (
-  `id` INT(11) NOT NULL,
-  `date` DATE NOT NULL,
-  `state` TEXT NOT NULL,
-  `coments` TEXT NULL DEFAULT NULL,
-  `userCode` INT(11) NOT NULL,
+  CREATE TABLE `orders`(
+  `id` INT NOT NULL,
+  `state` VARCHAR(1),
+  `coments` VARCHAR(200),
+  `users_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `FK_5a5f20a7-c59f-4f95-912c-a4483e8251b6` (`userCode` ASC) VISIBLE,
-  CONSTRAINT `FK_5a5f20a7-c59f-4f95-912c-a4483e8251b6`
-    FOREIGN KEY (`userCode`)
-    REFERENCES `gitmusic`.`users` (`id`))
+  FOREIGN KEY (`users_id`) REFERENCES users(id)
+  );
+  
+  CREATE TABLE IF NOT EXISTS `orderDetails` (
+  `order_id` INT NOT NULL,
+  `cantidad` INT NOT NULL,
+  `product_id` INT NOT NULL,
+  PRIMARY KEY (`order_id`, `product_id`),
+    FOREIGN KEY (`product_id`) REFERENCES products(id),
+    FOREIGN KEY (`order_id`) REFERENCES orders(id));
 
-CREATE TABLE IF NOT EXISTS orderdetails (
-  `orderID` INT(11) NOT NULL,
-  `cantidad` INT(11) NOT NULL,
-  `productID` INT(11) NOT NULL,
-  PRIMARY KEY (`orderID`, `productID`),
-  INDEX `FK_0e82b2e4-aad4-4fa2-919b-7626e39a490d` (`productID` ASC) VISIBLE,
-  CONSTRAINT `FK_0e82b2e4-aad4-4fa2-919b-7626e39a490d`
-    FOREIGN KEY (`productID`)
-    REFERENCES `gitmusic`.`products` (`id`),
-  CONSTRAINT `FK_53481c60-2ea2-48bf-aa1f-66a1e02f9826`
-    FOREIGN KEY (`orderID`)
-    REFERENCES `gitmusic`.`order` (`id`))
 
-CREATE TABLE IF NOT EXISTS products (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` TEXT NOT NULL,
-  `product_type` INT(11) NOT NULL,
-  `discount` INT(11) NULL DEFAULT 0,
-  `category` INT(11) NOT NULL,
-  `description` TEXT NOT NULL,
-  `price` INT(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `FK_a5e2aab4-e055-4538-bc5d-5460e51f07aa` (`product_type` ASC) VISIBLE,
-  INDEX `FK_28cd9248-731b-4a46-870f-e346f2d3c0aa` (`category` ASC) VISIBLE,
-  CONSTRAINT `FK_28cd9248-731b-4a46-870f-e346f2d3c0aa`
-    FOREIGN KEY (`category`)
-    REFERENCES `gitmusic`.`category` (`id`),
-  CONSTRAINT `FK_a5e2aab4-e055-4538-bc5d-5460e51f07aa`
-    FOREIGN KEY (`product_type`)
-    REFERENCES `gitmusic`.`producttype` (`id`))
-
-CREATE TABLE IF NOT EXISTS producttype (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` TEXT NOT NULL,
-  PRIMARY KEY (`id`))
-
-CREATE TABLE IF NOT EXISTS category (
-  `id` INT(11) NOT NULL,
-  `name` TEXT NOT NULL,
-  `description` TEXT NOT NULL,
-  PRIMARY KEY (`id`))
