@@ -1,4 +1,4 @@
-const Products = require('../database/config/Products');
+const Products = require('../database/models/Products');
 const db = require('../database/models')
 
 const UsersDbController = {

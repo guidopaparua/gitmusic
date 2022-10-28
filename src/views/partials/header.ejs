@@ -2,9 +2,9 @@
     <div class="header-container">
         <div class="header-top-container">
             <div class="main-logo-container">
-               <a href="/"> <img src="/images/gitLogo.png" class="main-logo"></a>
+                <a href="/"> <img src="/images/gitLogo.png" class="main-logo"></a>
             </div>
-        
+
             <ul class="header-user">
                 <li class="main-searchbox">
                     <form class="d-flex" action="/" method="get">
@@ -24,8 +24,17 @@
         </div>
 
         <div class="header-navbar">
-            <a class="navbar-item" href="/instrumentos">INSTRUMENTOS</a>
-            <a class="navbar-item" href="/vinilos">VINILOS</a>
+            <div class="dropdown">
+                <button class="instrumentos-button" for="all-instruments">INSTRUMENTOS</button>
+                <div class="dropdown-content">
+                    <a rel="noopener" target="_blank" href="/instrumentos/guitarras">Guitarras</a>
+                    <a rel="noopener" target="_blank" href="/instrumentos/bajos">Bajos</a>
+                    <a rel="noopener" target="_blank" href="/instrumentos/vientos">Vientos</a>
+                    <a rel="noopener" target="_blank" href="/instrumentos/teclados">Teclados</a>
+                    <a rel="noopener" target="_blank" href="/instrumentos/percusion">Percusión</a>
+                    <a rel="noopener" target="_blank" href="/instrumentos/amplificadores">Amplificadores</a>
+                </div>
+            </div>
             <a class="navbar-item" href="/ofertas">OFERTAS</a>
             <a class="navbar-item" href="/more">MAS</a>
         </div>
