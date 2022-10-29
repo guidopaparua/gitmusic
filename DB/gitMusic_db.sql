@@ -141,6 +141,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `discount` INT NULL,
   `price` int NOT NULL,
   `category` INT not null,
+  `productType` VARCHAR(45),
   `imagen` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`category`) REFERENCES categories(id)
