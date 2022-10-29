@@ -6,7 +6,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
     index: (req, res) => {
-        const instrumentos = products.filter(product => product.productType == 'instrumento')
+        const instrumentos = products
         res.render('index', { instrumentos });
     },
     search: (req, res) => {

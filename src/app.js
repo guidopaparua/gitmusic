@@ -9,6 +9,7 @@ const mainRouter = require('./routes/mainRouter');
 const loginRouter = require('./routes/loginRouter');
 const productsRouter = require('./routes/productsRouter');
 const registerRouter = require('./routes/registerRouter');
+const ofertasRouter = require('./routes/ofertasRouter');
 //DATABASE
 const ProductsDbRouter = require('./routes/ProductsDbRouter');
 const UsersDbRouter = require('./routes/UsersDbRouter');
@@ -27,6 +28,7 @@ app.use('/', mainRouter);
 app.use('/login', loginRouter);
 app.use('/products', productsRouter);
 app.use('/register', registerRouter);
+app.use('/ofertas', ofertasRouter);
 //DATABASE
 app.use('/Products', ProductsDbRouter);
 app.use('/Users', UsersDbRouter);

@@ -1,5 +1,5 @@
 module.exports = function(sequelize, dataTypes) {
-    const alias = 'Product';
+    const alias = 'Category';
 
     const cols = {
         id: {
@@ -15,32 +15,17 @@ module.exports = function(sequelize, dataTypes) {
         description: {
             type: dataTypes.STRING(180),
             allowNull: false
-        },
-        discount: {
-            type: dataTypes.INTEGER 
-        },
-        price: {
-            type: dataTypes.DECIMAL,
-            allowNull: false
-        },
-        category: {
-            type: dataTypes.INTEGER,
-            allowNull: false
-        },
-        imagen: {
-            type: dataTypes.STRING(200),
-            allowNull: false
         }
     }
 
     const config = {
-        tableName: 'products',
+        tableName: 'categories',
         timestamps: false
     }
 
-    const Products = sequelize.define(alias, cols, config);
+    const Categories = sequelize.define(alias, cols, config);
 
   //ASSOCIATE
 
-    return Products
+    return Categories
 }

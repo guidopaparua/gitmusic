@@ -16,6 +16,7 @@ const controller = {
 	detail: (req, res) => {
 		const id = req.params.id;
 		const product = products.find(product => product.id == id);
+		if(!product){return res.render('productNotFound')};
 		res.render('productDetails',{
 			product: product
 	   })
