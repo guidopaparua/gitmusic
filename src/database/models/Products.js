@@ -24,7 +24,8 @@ module.exports = function(sequelize, dataTypes) {
             allowNull: false
         },
         category: {
-
+            type: dataTypes.INTEGER,
+            allowNull: false
         },
         imagen: {
             type: dataTypes.STRING(200),

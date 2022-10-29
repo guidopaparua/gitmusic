@@ -24,9 +24,6 @@ module.exports = function(sequelize, dataTypes) {
             type: dataTypes.STRING,
             allownull: false
         },
-        user_type: {
-
-        },
         admin: {
             type: dataTypes.BOOLEAN
         }
@@ -40,6 +37,18 @@ module.exports = function(sequelize, dataTypes) {
     const Users = sequelize.define(alias, cols, config);
 
     //ASSOCIATE
+
+    Users.associate = function(models){
+    
+        Users.belongsTo(models.Orders,{
+
+            as: "orders",
+
+            foreingKey: "users_id"
+
+        });
+
+    }
 
     return Users
 }

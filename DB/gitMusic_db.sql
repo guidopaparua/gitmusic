@@ -130,7 +130,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `last_name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(180) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
-  `user_type` int not null,
   `admin` boolean NOT NULL,
   PRIMARY KEY (`id`));
   

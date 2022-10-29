@@ -27,6 +27,7 @@ module.exports = function(sequelize, dataTypes) {
     const OrdersDetails = sequelize.define(alias, cols, config);
 
   //ASSOCIATE
+  
 
     return OrdersDetails
 }

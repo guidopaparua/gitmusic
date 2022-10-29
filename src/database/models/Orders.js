@@ -15,7 +15,7 @@ module.exports = function(sequelize, dataTypes) {
             type: dataTypes.STRING(200)
         },
         users_id: {
-            type: DataTypes.INTEGER.UNSIGNED,
+            type: dataTypes.INTEGER.UNSIGNED,
             allownull: false
         }
     }
@@ -28,6 +28,18 @@ module.exports = function(sequelize, dataTypes) {
     const Orders = sequelize.define(alias, cols, config);
 
   //ASSOCIATE
+
+  Orders.associate = function(models){
+    
+    Orders.hasMany(models.Users,{
+
+        as: "Users",
+
+        foreingKey: "users_id"
+
+    });
+
+}
 
     return Orders
 }
