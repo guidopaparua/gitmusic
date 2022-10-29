@@ -5,21 +5,35 @@ module.exports = function(sequelize, dataTypes) {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: false
         },
         name: {
-            type: dataTypes.STRING
+            type: dataTypes.STRING(45),
+            allowNull: false
         },
         description: {
-            type: dataTypes.STRING
+            type: dataTypes.STRING(180),
+            allowNull: false
+        },
+        discount: {
+            type: dataTypes.INTEGER 
         },
         price: {
-            type: dataTypes.DECIMAL
+            type: dataTypes.DECIMAL,
+            allowNull: false
+        },
+        category: {
+
+        },
+        imagen: {
+            type: dataTypes.STRING(200),
+            allowNull: false
         }
     }
 
     const config = {
-        tableName: 'Products',
+        tableName: 'products',
         timestamps: false
     }
 
