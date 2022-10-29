@@ -28,6 +28,8 @@ const controller = {
 	
 	// (post) Create -  Método para guardar la info
 	store: (req, res) => {
+		//Generamos el nombre de img
+		let imgNameAndPath = "/images/products/"+req.file.filename;
 		// Guradamos el producto
 		let newProduct = {
 			id: products[products.length - 1].id + 1,
@@ -37,11 +39,11 @@ const controller = {
 			category: req.body.category,
 			description: req.body.description,
 			// ...req.body
-			image: req.file.filename
+			image: imgNameAndPath
 		}
 		products.push(newProduct);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, "  "));
-		res.redirect("/products/");
+		res.redirect("/products/"+newProduct.id);
 	},
 
 	// (get) Update - Formulario para editar

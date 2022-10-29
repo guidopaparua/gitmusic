@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+app.use(express.urlencoded({extended : false}));
+app.use(express.json());
+
 const mainRouter = require('./routes/mainRouter');
 const loginRouter = require('./routes/loginRouter');
 const productsRouter = require('./routes/productsRouter');

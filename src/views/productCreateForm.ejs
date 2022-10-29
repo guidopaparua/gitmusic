@@ -9,11 +9,12 @@
 
     <body>
         <%- include ('./partials/header')%>
-    <form action="/" method="get">
-        <input type="text" class="submit" placeholder="Nombre del producto"></input>
-        <input type="text" class="submit" placeholder="Tipo de instrumento"></input>
-        <input type="text" class="submit" placeholder="Descripción"></input>
-        <input type="text" class="submit" placeholder="Precio"></input>
+    <form action="/products/create" method="POST" enctype="multipart/form-data">
+        <input type="text" class="submit" name="name" placeholder="Nombre del producto"></input>
+        <input type="text" class="submit" name="category" placeholder="Tipo de instrumento"></input>
+        <input type="text" class="submit" name="description" placeholder="Descripción"></input>
+        <input type="number" class="submit" name="price" placeholder="Precio"></input>
+        <input type="file" class="submit" name="image" placeholder="Foto"></input>
         <button type="submit" >
             CREAR
         </button>
