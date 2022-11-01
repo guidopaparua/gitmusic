@@ -37,9 +37,11 @@ const controller ={
        	// 	res.render('/instrumentos/' + categoriaProducto,{
     	// 		product: product
     	//    })
-        
-		res.render('instrumentos/guitarras');
+
+		const instrumentos = products;
+		res.render('instrumentos/guitarras', { instrumentos });
 	}
 };
 
 module.exports = controller;
+

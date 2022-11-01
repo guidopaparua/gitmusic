@@ -24,8 +24,19 @@
                     </div>
                     <div class="products">
             
-
-                            
+                        <% instrumentos.forEach(element=>{%>
+                            <% if(element.category === 'Guitarras') {%>
+                            <article> <a href="/products/<%= element.id %>">
+                                    <img src="<%= element.image %>">
+                                    <div class="main-article">
+                                        <p class="price">
+                                            <%= element.price %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+                            <%};%>
+                            <% }) %>
                                 <!-- <article>
                                 <img src="images/tamaDrum.webp" alt="Batería" class="product_img">
                                 <div class="main-article">
