@@ -30,16 +30,29 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 // };
 
 const controller ={
-    categoria: (req, res) => {
-       	// 	const categoriaProducto = req.params.categoria;
-       	// 	const product = products.find(product => product.category == categoriaProducto);
-       	// 	if(!product){return res.render('productNotFound')};
-       	// 	res.render('/instrumentos/' + categoriaProducto,{
-    	// 		product: product
-    	//    })
-
+    guitarras: (req, res) => {
 		const instrumentos = products;
 		res.render('instrumentos/guitarras', { instrumentos });
+	},
+	bajos: (req, res) => {
+		const instrumentos = products;
+		res.render('instrumentos/bajos', { instrumentos });
+	},
+	vientos: (req, res) => {
+		const instrumentos = products;
+		res.render('instrumentos/vientos', { instrumentos });
+	},
+	teclados: (req, res) => {
+		const instrumentos = products;
+		res.render('instrumentos/teclados', { instrumentos });
+	},
+	percusion: (req, res) => {
+		const instrumentos = products;
+		res.render('instrumentos/percusion', { instrumentos });
+	},
+	amplificadores: (req, res) => {
+		const instrumentos = products;
+		res.render('instrumentos/amplificadores', { instrumentos });
 	}
 };
 

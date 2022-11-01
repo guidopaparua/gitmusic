@@ -30,7 +30,7 @@ app.use('/login', loginRouter);
 app.use('/products', productsRouter);
 app.use('/register', registerRouter);
 app.use('/ofertas', ofertasRouter);
-app.use('/instrumentos/guitarras', instrumentosRouter);
+app.use('/instrumentos', instrumentosRouter);
 //DATABASE
 app.use('/Products', ProductsDbRouter);
 app.use('/Users', UsersDbRouter);
