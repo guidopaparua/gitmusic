@@ -10,6 +10,7 @@ const loginRouter = require('./routes/loginRouter');
 const productsRouter = require('./routes/productsRouter');
 const registerRouter = require('./routes/registerRouter');
 const ofertasRouter = require('./routes/ofertasRouter');
+const instrumentosRouter = require('./routes/instrumentosRouter');
 //DATABASE
 const ProductsDbRouter = require('./routes/ProductsDbRouter');
 const UsersDbRouter = require('./routes/UsersDbRouter');
@@ -29,6 +30,7 @@ app.use('/login', loginRouter);
 app.use('/products', productsRouter);
 app.use('/register', registerRouter);
 app.use('/ofertas', ofertasRouter);
+app.use('/instrumentos/guitarras', instrumentosRouter);
 //DATABASE
 app.use('/Products', ProductsDbRouter);
 app.use('/Users', UsersDbRouter);
