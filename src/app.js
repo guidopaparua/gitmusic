@@ -39,7 +39,7 @@ app.use('/register', registerRouter);
 app.use('/ofertas', ofertasRouter);
 app.use('/instrumentos', instrumentosRouter);
 //DATABASE
-app.use('/Products', ProductsDbRouter);
+app.use('/product', ProductsDbRouter);
 app.use('/Users', UsersDbRouter);
 //ERROR 404
 app.use((req, res, next) => {

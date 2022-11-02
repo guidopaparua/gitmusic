@@ -1,5 +1,5 @@
 module.exports = function(sequelize, dataTypes) {
-    const alias = 'Users';
+    const alias = 'User';
 
     const cols = {
         id: {
@@ -40,7 +40,7 @@ module.exports = function(sequelize, dataTypes) {
 
     Users.associate = function(models){
     
-        Users.belongsTo(models.Orders,{
+        Users.belongsTo(models.Order,{
 
             as: "orders",
 

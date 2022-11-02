@@ -1,5 +1,5 @@
-module.exports = function(sequelize, dataTypes) {
-    const alias = 'OrdersDetails';
+module.exports = function (sequelize, dataTypes) {
+    const alias = 'Orders_has_product';
 
     const cols = {
         id: {
@@ -8,26 +8,26 @@ module.exports = function(sequelize, dataTypes) {
             autoIncrement: true,
             allownull: false
         },
-        order_id:{
+        order_id: {
             type: dataTypes.STRING(1)
         },
-        cantidad:{
+        cantidad: {
             type: dataTypes.STRING(1)
         },
-        product_id:{
+        product_id: {
             type: dataTypes.STRING(1)
         },
     }
 
     const config = {
-        tableName: 'ordersDetails',
+        tableName: 'orders_has_products',
         timestamps: false
     }
 
-    const OrdersDetails = sequelize.define(alias, cols, config);
+    const Orders_has_product = sequelize.define(alias, cols, config);
 
-  //ASSOCIATE
-  
+    //ASSOCIATE
 
-    return OrdersDetails
+
+    return Orders_has_product
 }

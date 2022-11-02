@@ -4,6 +4,6 @@ const ProductsDbController = require('../controllers/ProductsDbController')
 
 const router = express.Router();
 
-router.get('/crear', ProductsDbController.create)
+router.get('/', ProductsDbController.index)
 
 module.exports = router;

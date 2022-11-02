@@ -1,9 +1,13 @@
 const db = require('../database/models')
 
 const ProductsDbController = {
-    create: function(req, res){
-
-    }
+    index: function(req, res){
+        db.Product.findAll({include: ['orders']})
+        .then(products =>{
+            res.send(products)
+        })
+    },
+    
 }
 
 module.exports = ProductsDbController;
