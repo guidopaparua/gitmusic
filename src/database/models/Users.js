@@ -25,7 +25,8 @@ module.exports = function(sequelize, dataTypes) {
             allownull: false
         },
         admin: {
-            type: dataTypes.BOOLEAN
+            type: dataTypes.BOOLEAN,
+            allownull: false
         }
     }
 
