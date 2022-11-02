@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`));
 
   CREATE TABLE `orders`(
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `state` VARCHAR(1),
   `coments` VARCHAR(200),
   `users_id` INT UNSIGNED NOT NULL,
@@ -171,3 +171,5 @@ CREATE TABLE IF NOT EXISTS `users` (
     FOREIGN KEY (`order_id`) REFERENCES orders(id));
 
 
+
+    
