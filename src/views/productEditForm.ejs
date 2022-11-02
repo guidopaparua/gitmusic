@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include ('./partials/head')%>
+    <!--STYLES.CSS-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Git Music - Editar producto <%= product.name %> </title>
+    </head>
+
+    <body>
+        <%- include ('./partials/header')%>
+    <form action="/products/edit?_method=PUT" method="POST" enctype="multipart/form-data">
+        <input type="number" name="id" value="<%= product.id %>" hidden>
+        <input type="text" class="submit" name="name" value="<%= product.name %>" placeholder="Nombre del producto"></input>
+        <select name="category" id="category">
+            <option <%= product.category=='Guitarras' ? "selected" : "" %>  value="Guitarras">Guitarra</option>
+            <option <%= product.category=='Bajos' ? "selected" : "" %> value="Bajos">Bajo</option>
+            <option <%= product.category=='Baterías' ? "selected" : "" %> value="Baterías">Batería</option>
+            <option <%= product.category=='Teclados' ? "selected" : "" %> value="Teclados">Teclado</option>
+        </select>
+        <input type="text" class="submit" name="description" value="<%= product.description %>" placeholder="Descripción"></input>
+        <input type="number" class="submit" name="price" value="<%= product.price %>" placeholder="Precio"></input>
+        <input type="file" class="submit" name="image"  placeholder="Foto"></input>
+        <input type="number" class="submit" name="discount" placeholder="descuento" value="<%= product.discount %>">
+        <button type="submit" >
+            EDITAR
+        </button>
+    </form>
+
+    <%- include ('./partials/footer')%>
+    
+</body>
+</html>

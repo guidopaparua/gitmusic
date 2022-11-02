@@ -33,7 +33,7 @@ const controller = {
 		let imgNameAndPath = "/images/products/"+req.file.filename;
 		// Guradamos el producto
 		let newProduct = {
-			id: products[products.length - 1].id + 1,
+			id: parseInt(products[products.length - 1].id) + 1,
 			name: req.body.name,
 			price: req.body.price,
 			discount: req.body.discount,
@@ -52,39 +52,37 @@ const controller = {
 		const id = req.params.id;
 		const product = products.find(product => product.id == id);
 		
-		res.render('product-edit-form', {
-			productSent: product
+		res.render('productEditForm', {
+			product: product
 		})
 	},
 	// (put) Update - Método ara actualizar la info
 	update: (req, res) => {	
 		// Editamos el producto que llegó por parámetro su ID
+		const idAEditar = req.body.id;
+		const productToEdit = products.find(product => product.id == idAEditar);
 
-		let id = req.params.id;
-		let productToEdit = products.find(product => {
-			return product.id == id;
-		});
 		let editProduct = {
-			id: id,
+			id: parseInt(req.body.id),
 			name: req.body.name,
 			price: req.body.price,
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
 			// ...req.body
-			image: req.file ? req.file.filename : productToEdit.image
+			image: req.file ? "/images/products/"+req.file.filename : productToEdit.image
 		}
 		
 		// Ya hemos modificado el array
 		products.forEach((product, index) => {
-			if(product.id == id) {
+			if(product.id == idAEditar) {
 				products[index] = editProduct;
 			}
 		});
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
 		
-		res.redirect("/products/");
+		res.redirect("/products/"+idAEditar);
 	},
 
 	// Delete - Delete one product from DB

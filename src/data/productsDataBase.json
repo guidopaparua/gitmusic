@@ -1,182 +1,182 @@
 [
-  {
-    "id": 1,
-    "name": "Batería Tama",
-    "price": "1,499.99",
-    "discount": "15",
-    "category": "Baterías",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/tamaDrum.webp"
-  },
-  {
-    "id": 2,
-    "name": "Guitarra Fender",
-    "price": "1,999.99",
-    "discount": "30",
-    "category": "Guitarras",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/fenderGuitar.webp"
-  },
-  {
-    "id": 3,
-    "name": "Bajo Fender",
-    "price": "1,999.99",
-    "discount": "10",
-    "category": "Bajos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/bajoFender.webp"
-  },
-  {
-    "id": 4,
-    "name": "Yamaha F335 Acústica Guitarra Negra",
-    "price": "999.99",
-    "discount": "",
-    "category": "Guitarras",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/yamahaAcustica.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Gibson ES-339 Guitarra Electrica Blueberry Burst",
-    "price": "3,999.99",
-    "discount": "",
-    "category": "Guitarras",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/guitarraGibson.webp"
-  },
-  {
-    "id": 6,
-    "name": "Fender Vintage Amplificador '65",
-    "price": "1,500.00",
-    "discount": "",
-    "category": "Amplificadores",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/amplificadorFender.webp"
-  },
-  {
-    "id": 7,
-    "name": "Marshall Amplificador 40W 1x12 Guitar ",
-    "price": "1,000.00",
-    "discount": "",
-    "category": "Amplificadores",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/amplificadorMarshall.webp"
-  },
-  {
-    "id": 8,
-    "name": "Bateria Electronica Alesis Set",
-    "price": "1,399.99",
-    "discount": "",
-    "category": "Baterías",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/bateriaElectricaAlesis.webp"
-  },
-  {
-    "id": 9,
-    "name": "TAMA Metalworks Redoblante 14 x 6.5",
-    "price": "299.99",
-    "discount": "",
-    "category": "Baterías",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/redoblanteTama.jpg"
-  },
-  {
-    "id": 10,
-    "name": "DW Redoblante 14 x 6.5",
-    "price": "499.99",
-    "discount": "",
-    "category": "Baterías",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/redoblanteDw.webp"
-  },
-  {
-    "id": 11,
-    "name": "Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico",
-    "price": "599.99",
-    "discount": "",
-    "category": "Bajos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/bajoIbanez.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico Azul",
-    "price": "699.99",
-    "discount": "",
-    "category": "Bajos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/bajoIbanezBlue.webp"
-  },
-  {
-    "id": 13,
-    "name": "Taylor GS Bajo Acoustico-Electrico",
-    "price": "749.99",
-    "discount": "",
-    "category": "Bajos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/bajoAcusticoTaylor.webp"
-  },
-  {
-    "id": 14,
-    "name": "Yamaha Saxofón",
-    "price": "2,999.99",
-    "discount": "",
-    "category": "Saxofones",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/yamahaSaxo.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Allora Saxofón Tenor",
-    "price": "2,999.99",
-    "discount": "",
-    "category": "Saxofones",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/alloraSaxo.webp"
-  },
-  {
-    "id": 16,
-    "name": "Nord Teclado Rojo",
-    "price": "4,999.99",
-    "discount": "",
-    "category": "Teclados",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/tecladoNord.webp"
-  },
-  {
-    "id": 17,
-    "name": "Yamaha Teclado",
-    "price": "2,699.99",
-    "discount": "",
-    "category": "Teclados",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/tecladoYamaha.webp"
-  },
-  {
-    "id": 18,
-    "name": "Vox Continentall Teclado",
-    "price": "1,699.99",
-    "discount": "",
-    "category": "Teclados",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/voxContinentallTeclado.jpg"
-  },
-  {
-    "id": 19,
-    "name": "DW Collectors 4 piezas Batería",
-    "price": "3,999.99",
-    "discount": "",
-    "category": "Baterías",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/dwCollectorsDrum.webp"
-  },
-  {
-    "id": 20,
-    "name": "Ludwing Clásica Maple Bateria",
-    "price": "2,599.99",
-    "discount": "",
-    "category": "Baterías",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "/images/products/ludwingBateria.webp"
-  }
+ {
+  "id": 1,
+  "name": "Batería Tama",
+  "price": 1499.99,
+  "discount": "15",
+  "category": "Baterías",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/tamaDrum.webp"
+ },
+ {
+  "id": 2,
+  "name": "Guitarra Fender",
+  "price": 1999.99,
+  "discount": "30",
+  "category": "Guitarras",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/fenderGuitar.webp"
+ },
+ {
+  "id": 3,
+  "name": "Bajo Fender",
+  "price": 1999.99,
+  "discount": "10",
+  "category": "Bajos",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/bajoFender.webp"
+ },
+ {
+  "id": 4,
+  "name": "Yamaha F335 Acústica Guitarra Negra",
+  "price": 999.99,
+  "discount": "",
+  "category": "Guitarras",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/yamahaAcustica.jpg"
+ },
+ {
+  "id": 5,
+  "name": "Gibson ES-339 Guitarra Electrica Blueberry Burst",
+  "price": 3999.99,
+  "discount": "",
+  "category": "Guitarras",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/guitarraGibson.webp"
+ },
+ {
+  "id": 6,
+  "name": "Fender Vintage Amplificador '65",
+  "price": 1500,
+  "discount": "",
+  "category": "Amplificadores",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/amplificadorFender.webp"
+ },
+ {
+  "id": 7,
+  "name": "Marshall Amplificador 40W 1x12 Guitar ",
+  "price": 1000,
+  "discount": "",
+  "category": "Amplificadores",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/amplificadorMarshall.webp"
+ },
+ {
+  "id": 8,
+  "name": "Bateria Electronica Alesis Set",
+  "price": 1399.99,
+  "discount": "",
+  "category": "Baterías",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/bateriaElectricaAlesis.webp"
+ },
+ {
+  "id": 9,
+  "name": "TAMA Metalworks Redoblante 14 x 6.5",
+  "price": 299.99,
+  "discount": "",
+  "category": "Baterías",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/redoblanteTama.jpg"
+ },
+ {
+  "id": 10,
+  "name": "DW Redoblante 14 x 6.5",
+  "price": 499.99,
+  "discount": "",
+  "category": "Baterías",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/redoblanteDw.webp"
+ },
+ {
+  "id": 11,
+  "name": "Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico",
+  "price": 599.99,
+  "discount": "",
+  "category": "Bajos",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/bajoIbanez.jpg"
+ },
+ {
+  "id": 12,
+  "name": "Ibanez SR405EPBDX 5-Cuerdas Bajo Electrico Azul",
+  "price": 699.99,
+  "discount": "",
+  "category": "Bajos",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/bajoIbanezBlue.webp"
+ },
+ {
+  "id": 13,
+  "name": "Taylor GS Bajo Acoustico-Electrico",
+  "price": 749.99,
+  "discount": "",
+  "category": "Bajos",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/bajoAcusticoTaylor.webp"
+ },
+ {
+  "id": 14,
+  "name": "Yamaha Saxofón",
+  "price": 2999.99,
+  "discount": "",
+  "category": "Saxofones",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/yamahaSaxo.jpg"
+ },
+ {
+  "id": 15,
+  "name": "Allora Saxofón Tenor",
+  "price": 2999.99,
+  "discount": "",
+  "category": "Saxofones",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/alloraSaxo.webp"
+ },
+ {
+  "id": 16,
+  "name": "Nord Teclado Rojo",
+  "price": 4999.99,
+  "discount": "",
+  "category": "Teclados",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/tecladoNord.webp"
+ },
+ {
+  "id": 17,
+  "name": "Yamaha Teclado",
+  "price": 2699.99,
+  "discount": "",
+  "category": "Teclados",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/tecladoYamaha.webp"
+ },
+ {
+  "id": 18,
+  "name": "Vox Continentall Teclado",
+  "price": 1699.99,
+  "discount": "",
+  "category": "Teclados",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/voxContinentallTeclado.jpg"
+ },
+ {
+  "id": 19,
+  "name": "DW Collectors 4 piezas Batería",
+  "price": 3999.99,
+  "discount": "",
+  "category": "Baterías",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/dwCollectorsDrum.webp"
+ },
+ {
+  "id": 20,
+  "name": "Ludwing Clásica Maple Bateria",
+  "price": 2599.99,
+  "discount": "",
+  "category": "Baterías",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "image": "/images/products/ludwingBateria.webp"
+ }
 ]

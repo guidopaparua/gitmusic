@@ -2,8 +2,15 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+//Multer
 app.use(express.urlencoded({extended : false}));
 app.use(express.json());
+
+
+//MethodOverride
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+
 
 const mainRouter = require('./routes/mainRouter');
 const loginRouter = require('./routes/loginRouter');
