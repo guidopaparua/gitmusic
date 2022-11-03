@@ -1,6 +1,5 @@
 const Products = require('../database/models/Products');
 const db = require('../database/models')
-const User = require('../database/models/Users')
 
 const UsersDbController = {
     create: function(req, res){

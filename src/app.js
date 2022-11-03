@@ -19,8 +19,8 @@ const registerRouter = require('./routes/registerRouter');
 const ofertasRouter = require('./routes/ofertasRouter');
 const instrumentosRouter = require('./routes/instrumentosRouter');
 //DATABASE
-const ProductsDbRouter = require('./routes/ProductsDbRouter');
-const UsersDbRouter = require('./routes/UsersDbRouter');
+const DbProductsRouter = require('./routes/DbProductsRouter');
+const DbUsersRouter = require('./routes/DbUsersRouter');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -39,8 +39,8 @@ app.use('/register', registerRouter);
 app.use('/ofertas', ofertasRouter);
 app.use('/instrumentos', instrumentosRouter);
 //DATABASE
-app.use('/product', ProductsDbRouter);
-app.use('/Users', UsersDbRouter);
+app.use('/product', DbProductsRouter);
+app.use('/Users', DbUsersRouter);
 //ERROR 404
 app.use((req, res, next) => {
     res.status('404').render('not-found')
