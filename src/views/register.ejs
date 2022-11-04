@@ -14,9 +14,14 @@
         <div class="formulario">
             <div class="errores">
                 <ul>
+                    <% if (typeof errors !='undefined') { errors.forEach(error=> { %>
+                        <li>
+                            <%= error.msg %>
+                        </li>
+                        <% }) } %>
                 </ul>
             </div>
-            <form action="/" method="get" class="formulario">
+            <form action="/register" method="post" class="formulario">
                     <h3>
                         CREAR UNA CUENTA
                     </h3>
@@ -24,17 +29,17 @@
                     <div class="el-nombre">
                         <label for="nombre">NOMBRE:</label>
                         <br>
-                        <input type="text" name=nombre id="nombre" required>
+                        <input type="text" name=first_name id="nombre" required>
                     </div>
                     <div class="el-apellido">
-                        <label for="nombre">APELLIDO:</label>
+                        <label for="apellido">APELLIDO:</label>
                         <br>
-                        <input type="text" name=apellido id="apellido" required>
+                        <input type="text" name=last_name id="apellido" required>
                     </div>
                     <div class="el-correo">
                         <label for="correo">INGRESAR CORREO:</label>
                         <br>
-                        <input type="email" name=correo id="correo" required>
+                        <input type="email" name=email id="correo" required>
                     </div>
                     <div class="la-contraseña">
                         <label for="password">CONTRASEÑA</label>

@@ -9,13 +9,13 @@ module.exports = function (sequelize, dataTypes) {
             allownull: false
         },
         order_id: {
-            type: dataTypes.STRING(1)
+            type: dataTypes.INTEGER.UNSIGNED
         },
         cantidad: {
-            type: dataTypes.STRING(1)
+            type: dataTypes.INTEGER
         },
         product_id: {
-            type: dataTypes.STRING(1)
+            type: dataTypes.INTEGER.UNSIGNED
         },
     }
 
