@@ -15,19 +15,19 @@ const db = require('../../database/models');
             return res.send(error);
         }
     },
-    /*
+    
     getById:  async function(req, res){
         try {
-            const user = await db.User.findByPk(req.params.id, {attributes: {exclude: ['password']}}); // para excluir un dato en especifico
-            if(!user){
+            const product = await db.Product.findByPk(req.params.id, {  }); // para excluir un dato en especifico
+            if(!product){
                 return res.status(404).send({
                     status:404,
-                    msg: 'usuario no encontrado.'
+                    msg: 'producto no encontrado.'
                 }); 
             };
             const response = {
-                url: '/api/user/' + req.params.id,
-                data: user,
+                url: '/api/product/' + req.params.id,
+                data: product,
                 status: 200
             };
             return res.send(response);
@@ -35,7 +35,7 @@ const db = require('../../database/models');
             return res.send(error);
         }
     }
-    */
+
  };
 
 module.exports = controller;
