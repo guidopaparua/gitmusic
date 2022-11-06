@@ -23,9 +23,10 @@
                         <h3>NUESTROS PRODUCTOS</h3>
                     </div>
                     <div class="products">
-                        <% instrumentos.forEach(element=>{%>
+                        <!-- ejemplo para traer desde db -->
+                        <% products.forEach(element=>{%>
                             <article> <a href="/products/<%= element.id %>">
-                                    <img src="<%= element.image %>">
+                                    <img src="/images/products/<%= element.imagen %>">
                                     <div class="main-article">
                                         <p class="price">
                                             <%= element.price %>

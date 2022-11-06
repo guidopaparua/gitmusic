@@ -21,7 +21,7 @@
                         <% }) } %>
                 </ul>
             </div>
-            <form action="/register" method="post" class="formulario">
+            <form action="/register" method="post" class="formulario" enctype="multipart/form-data">
                     <h3>
                         CREAR UNA CUENTA
                     </h3>
@@ -41,6 +41,13 @@
                         <br>
                         <input type="email" name=email id="correo" required>
                     </div>
+
+                    <div class="imagen">
+                        <label for="imagen">INGRESAR imagen:</label>
+                        <br>
+                        <input type="file" name="imagen" id="imagen" required>
+                    </div>
+
                     <div class="la-contraseña">
                         <label for="password">CONTRASEÑA</label>
                         <br>
