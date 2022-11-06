@@ -4,10 +4,10 @@ const db = require('../../database/models');
  const controller = {
      getAll: async function(req, res){
         try {
-            const users = await db.User.findAll({attributes: {exclude: ['password']}}); // para excluir un dato en especifico
+            const products = await db.Product.findAll({}); // para excluir un dato en especifico
             const response = {
-                total: users.length,
-                data: users,
+                total: products.length,
+                data: products,
                 status: 200
             };
             return res.send(response);
@@ -15,6 +15,7 @@ const db = require('../../database/models');
             return res.send(error);
         }
     },
+    /*
     getById:  async function(req, res){
         try {
             const user = await db.User.findByPk(req.params.id, {attributes: {exclude: ['password']}}); // para excluir un dato en especifico
@@ -34,6 +35,7 @@ const db = require('../../database/models');
             return res.send(error);
         }
     }
+    */
  };
 
 module.exports = controller;

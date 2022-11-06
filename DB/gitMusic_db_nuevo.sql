@@ -79,7 +79,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 	insert into products (name, description, discount, price, category, imagen) values ('Ludwing Clásica Maple Bateria','.',null,2599,2,'/images/products/ludwingBateria.webp');
     
     
-
+	insert into users(first_name,last_name,email,password,admin) values('guido','papa rua','guidopaparua@gitmusic.com','guido',1);
+	insert into users(first_name,last_name,email,password,admin) values('juan','grasso','juangrasso@gitmusic.com','juan',1);
+	insert into users(first_name,last_name,email,password,admin) values('monica','reyes','monicareyes@gitmusic.com','monica',1);
+	insert into users(first_name,last_name,email,password,admin) values('santiago','hamwee','santiagohamwee@gitmusic.com','santiago',1);
+	insert into users(first_name,last_name,email,password,admin) values('lucas','seijas','lucasseijas@gitmusic.com','lucas',1);
+  insert into users(first_name,last_name,email,password,admin) values('usuario','prueba','usuarioprueba@gmail.com','usuario',0);
+    
+    
     
     
     

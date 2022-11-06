@@ -23,6 +23,7 @@ const DbProductsRouter = require('./routes/DbProductsRouter');
 const DbUsersRouter = require('./routes/DbUsersRouter');
 //api routes
 const userApiRouters = require('./routes/api/userRouter');
+const productApiRouters = require('./routes/api/productRouter');
 //end api routes
 
 app.set('view engine', 'ejs');
@@ -46,6 +47,7 @@ app.use('/product', DbProductsRouter);
 app.use('/Users', DbUsersRouter);
 //api routes
 app.use('/api/user', userApiRouters);
+app.use('/api/product', productApiRouters);
 //end api routes
 //ERROR 404
 app.use((req, res, next) => {
