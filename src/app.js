@@ -21,6 +21,9 @@ const instrumentosRouter = require('./routes/instrumentosRouter');
 //DATABASE
 const DbProductsRouter = require('./routes/DbProductsRouter');
 const DbUsersRouter = require('./routes/DbUsersRouter');
+//api routes
+const userApiRouters = require('./routes/api/userRouter');
+//end api routes
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -41,6 +44,9 @@ app.use('/instrumentos', instrumentosRouter);
 //DATABASE
 app.use('/product', DbProductsRouter);
 app.use('/Users', DbUsersRouter);
+//api routes
+app.use('/api/user', userApiRouters);
+//end api routes
 //ERROR 404
 app.use((req, res, next) => {
     res.status('404').render('not-found')
