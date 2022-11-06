@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const session = require('express-session');
 
 //Multer
 app.use(express.urlencoded({extended : false}));
@@ -45,3 +46,4 @@ app.use('/Users', DbUsersRouter);
 app.use((req, res, next) => {
     res.status('404').render('not-found')
 })
+app.use(session({secret: "Secreto"}));
