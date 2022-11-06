@@ -13,10 +13,23 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productsCategory = JSON.parse(fs.readFileSync(productsCategoryFilePath, 'utf-8'));
 
 const controller = {
-    index: (req, res) => {
-        const instrumentos = productsCategory
-        res.render('index', { instrumentos });
-    },
+    // index: (req, res) => {
+
+    //     const instrumentos = productsCategory
+    //     res.render('index', { instrumentos });
+    // },
+    // metodo viejo del index que funciona con el json -- metodo nuevo con db
+    index: (req, res) =>{
+        db.Product.findAll()
+        .then( (products) =>{
+            return res.render('index', {products})
+        })
+        .catch(error =>{
+            console.log(error)
+            res.send(500);
+        })
+    },   
+
     search: (req, res) => {
         db.Products.findAll({
             where: {

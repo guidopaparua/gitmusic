@@ -4,7 +4,7 @@
 <%- include ('./partials/head')%>
     <!--STYLES.CSS-->
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/stylesIndex.css">
+    <link rel="stylesheet" href="/css/stylesIndex.css">npm
     <title>Git Music</title>
     </head>
 
@@ -23,10 +23,11 @@
                         <h3>NUESTRAS CATEGORIAS</h3>
                     </div>
                     <div class="products">
-                       <% instrumentos.forEach(element=>{%>
+                       <% products.forEach(element=>{%>
                             <article> <a href="/products/<%= element.id %>">
-                                    <img src="<%= element.image %>">
+                                    <img src="/images/products/<%= element.imagen %>">
                                 </a>
+                                <p class="price">$<%= element.price%> </p>
                             </article>
                             <% }) %> 
                                 <!-- <article>

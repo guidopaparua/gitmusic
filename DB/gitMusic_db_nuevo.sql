@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` VARCHAR(180) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   `admin` boolean NOT NULL,
+  `imagen` varchar(180),
   PRIMARY KEY (`id`)
   );
     
