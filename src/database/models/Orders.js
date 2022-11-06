@@ -31,7 +31,7 @@ module.exports = function (sequelize, dataTypes) {
 
     Orders.associate = function (models) {
 
-        Orders.hasMany(models.User, {
+        Orders.belongsTo(models.User, {
 
             as: "users",
 

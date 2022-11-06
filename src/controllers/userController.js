@@ -1,17 +1,44 @@
 const User = require('../database/models/Users');
 const bcryptjs = require('bcryptjs');
+const { validationResult } = require('express-validator');
+const db = require('../database/models/');
 
 const controller = {
-    processRegister: (req, res) => {
-        let userInDb = User.findByField('email', req.body.email);
-        
-        let userToCreate = {
-            ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10),
-            avatar: req.file.filename
+    processRegister: async (req, res) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.render('register', { errors: errors.array()})
         }
 
-        User.create(userToCreate);
-        return res.render('login')
+        let userInDb = await db.User.findOne({
+            where: {
+                email: req.body.email
+            }
+        })
+
+        if (userInDb) {
+            return res.render('register', {
+                errors: [
+                    {msg: 'Este email ya está registrado'}   
+                ]
+                
+            })
+        }
+
+        let userToCreate = {
+            ...req.body,
+            admin: false
+        }
+        try {
+            await db.User.create(userToCreate)
+            return res.redirect('/login')
+        } catch (error) {
+            return res.send(error)
+        }
+    },
+    register: (req, res) => {
+        res.render('register');
     }
+
 }
+module.exports = controller;

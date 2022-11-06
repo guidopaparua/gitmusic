@@ -39,17 +39,7 @@ module.exports = function(sequelize, dataTypes) {
 
     //ASSOCIATE
 
-    Users.associate = function(models){
     
-        Users.belongsTo(models.Order,{
-
-            as: "orders",
-
-            foreingKey: "users_id"
-
-        });
-
-    }
 
     return Users
 }

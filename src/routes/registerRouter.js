@@ -1,8 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const userController = require('../controllers/userController');
+const { body } = require('express-validator');
+const validaciones = [
+    body('first_name').notEmpty().withMessage('Este campo es obligatorio'),
+    body('last_name').notEmpty().withMessage('Este campo es obligatorio'),
+    body('email').isEmail().withMessage('Este campo es obligatorio'),
+    body('password').notEmpty().withMessage('Este campo es obligatorio')
+];  
 
-const registerController = require('../controllers/registerController');
-
-router.get('/', registerController.register);
+router.get('/', userController.register)
+router.post('/', validaciones, userController.processRegister);
 
 module.exports = router;
