@@ -9,6 +9,9 @@ Reyes Monica: Colombiana, 22 años.\
 Grasso Juan Pablo, 21 años.\
 Papa Rúa Guido: Argentino, 26 años, estudiante de Medicina.
 
+#### **Dashboard React**
+https://github.com/JuanPabloGrasso/gitMusicReact
+
 #### **Sitios Web de referencia**
 1) https://tiendafeedback.com.ar/
 2) https://www.guitarcenter.com/
