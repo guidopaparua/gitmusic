@@ -12,6 +12,7 @@ const DbUsersController = {
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             email: req.body.email,
+            imagen: req.file ? req.file.filename : 'default.png',
             password: req.body.password,
             admin: req.body.admin
         });

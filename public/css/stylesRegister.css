@@ -1,28 +1,30 @@
 .container-principal{
-  padding: 2rem;
+  padding: 20px 200px;
   background-color: black;
 }
 
 .boton-registro{
+  color: white;
   padding: 10px 20px;
-    background-color: yellow;
-    border-radius: 30px;
+  background-color: red;
+  border-color: red;
   }
 
  .boton-registro:hover{
-  background-color: white;
+  background-color: yellow;
   color: #000000;
+  border-color: yellow;
   }
 
 h3{
   font-size: 30px;
 }
 
-.el-correo, .la-contraseña, .la-contraseña2{
+.el-nombre, .el-apellido, .el-correo, .la-contraseña, .la-contraseña2{
   padding-bottom: 10px;
 }
 
-#correo, #password, #password2{
+#nombre, #apellido, #correo, #password, #password2{
   padding-bottom: 1rem;
   width: 100%;
   background-color: #D9D9D9;
@@ -38,10 +40,14 @@ h3{
     padding: 2rem;
 }
 
+@media (max-width: 478px){
+  .container-principal {
+    padding: 10px;
+  }
+}
 
 @media (min-width: 1024px){
   .container-principal{
     padding: 3rem;
   }
-  
 } 

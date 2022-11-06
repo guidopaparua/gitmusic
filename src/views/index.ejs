@@ -4,7 +4,7 @@
 <%- include ('./partials/head')%>
     <!--STYLES.CSS-->
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/stylesIndex.css">
+    <link rel="stylesheet" href="/css/stylesIndex.css">npm
     <title>Git Music</title>
     </head>
 
@@ -23,12 +23,13 @@
                         <h3>NUESTRAS CATEGORIAS</h3>
                     </div>
                     <div class="products">
-                        <% instrumentos.forEach(element=>{%>
+                       <% products.forEach(element=>{%>
                             <article> <a href="/products/<%= element.id %>">
-                                    <img src="<%= element.image %>">
+                                    <img src="/images/products/<%= element.imagen %>">
                                 </a>
+                                <p class="price">$<%= element.price%> </p>
                             </article>
-                            <% }) %>
+                            <% }) %> 
                                 <!-- <article>
                                 <img src="images/tamaDrum.webp" alt="Batería" class="product_img">
                                 <div class="main-article">
@@ -61,30 +62,7 @@
                                 </div>
                             </article> -->
                     </div>
-                </section>
-                <!--Tercera sección-->
-                <section class="banner-publicidad">
-                    <div>
-                        Añadir aquí la autopauta
-                    </div>
-                </section>
-                <h3>Acá tenemos que ver que poner</h3>
-                <section class="offers">
-                    <div class="products">
-
-                    </div>
-                </section>
-                <h3>CRUD</h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/Products/create" class="crearP">Crear producto</a>
-                        </li>
-                        <li>
-                            <a href="/Products" class="listaP">Listado de productos</a>
-                        </li>
-                    </ul>
-                </nav>
+                </section>                
             </main>
             <%- include ('./partials/footer')%>
     </body>
