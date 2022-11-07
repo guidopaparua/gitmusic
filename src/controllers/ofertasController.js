@@ -1,13 +1,17 @@
 const fs = require('fs');
 const path = require('path');
 const db = require('../database/models/');
+const sequelize = require('sequelize');
+const Op = sequelize.Op;
 
 
 const controller = {
     ofertas: (req, res) => {
         db.Product.findAll({
             where: {
-                discount: 15 //not Null
+                discount: {
+                    [Op.ne]: null
+                  }
             }
         })
         .then( (products) =>{

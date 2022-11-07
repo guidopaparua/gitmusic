@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const session = require('express-session');
+const cookieParser = require('cookie-parser')
 
 //Multer
 app.use(express.urlencoded({extended : false}));
@@ -55,3 +56,4 @@ app.use((req, res, next) => {
     res.status('404').render('not-found')
 })
 app.use(session({secret: "Secreto"}));
+app.use(cookieParser());

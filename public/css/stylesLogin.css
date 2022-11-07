@@ -104,6 +104,11 @@ font-size: 20px;
     border-color: black;
 }
 
+.remember{
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 478px){
     .login-container{
         width: 100%;
