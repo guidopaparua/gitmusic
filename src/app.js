@@ -23,6 +23,8 @@ const instrumentosRouter = require('./routes/instrumentosRouter');
 //DATABASE
 const DbProductsRouter = require('./routes/DbProductsRouter');
 const DbUsersRouter = require('./routes/DbUsersRouter');
+//Middlwares
+//const cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware');
 //api routes
 const userApiRouters = require('./routes/api/userRouter');
 const productApiRouters = require('./routes/api/productRouter');
@@ -44,7 +46,8 @@ app.use(session(
       resave: false,
       saveUninitialized: true
   }));
-  app.use(cookieParser());
+app.use(cookieParser());
+//app.use(cookieAuthMiddleware);
 
 app.use('/', mainRouter);
 app.use('/login', loginRouter);
