@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const session = require('express-session');
+const cookieParser = require('cookie-parser')
 
 //Multer
 app.use(express.urlencoded({extended : false}));
@@ -35,6 +37,14 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("Servidor iniciado en: http://localhost:" + port);
 });
+
+app.use(session(
+    {
+      secret: "Secreto",
+      resave: false,
+      saveUninitialized: true
+  }));
+  app.use(cookieParser());
 
 app.use('/', mainRouter);
 app.use('/login', loginRouter);

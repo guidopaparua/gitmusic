@@ -24,19 +24,18 @@
                     </div>
                     <div class="products">
 
-                        <% instrumentos.forEach(element=>{%>
-                            <% if(element.category==='Teclados' ) {%>
-                                <article> <a href="/products/<%= element.id %>">
-                                        <img src="<%= element.image %>">
-                                        <div class="main-article">
-                                            <p class="price">
-                                                <%= element.price %>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </article>
-                                <%};%>
-                                    <% }) %>
+
+                        <% products.forEach(element=>{%>
+                            <article> <a href="/products/<%= element.id %>">
+                                    <img src="/images/products/<%= element.imagen %>">
+                                    <div class="main-article">
+                                        <p class="price">
+                                            <%= element.price %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+                                <% }) %>
                     </div>
                 </section>
                 <!--Tercera sección-->

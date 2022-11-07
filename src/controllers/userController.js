@@ -27,6 +27,7 @@ const controller = {
 
         let userToCreate = {
             ...req.body,
+            imagen: req.file ? req.file.filename : 'default.png',
             admin: false
         }
         try {

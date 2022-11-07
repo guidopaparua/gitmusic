@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const db = require('../database/models');
+// const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+// const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 // const controller = {
 
@@ -31,28 +31,106 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller ={
     guitarras: (req, res) => {
-		const instrumentos = products;
-		res.render('instrumentos/guitarras', { instrumentos });
+
+		db.Product.findAll(
+		{
+            where: {
+                category: 1
+            }
+        }
+		)
+			.then( (products) =>{
+            	return res.render('instrumentos/guitarras', {products})
+       		})
+            .catch(error => {
+                console.log(error)
+                res.send(500);
+            })
 	},
 	bajos: (req, res) => {
-		const instrumentos = products;
-		res.render('instrumentos/bajos', { instrumentos });
+
+		db.Product.findAll(
+			{
+				where: {
+					category: 3
+				}
+			}
+			)
+				.then( (products) =>{
+					return res.render('instrumentos/bajos', {products})
+				   })
+				.catch(error => {
+					console.log(error)
+					res.send(500);
+				})
 	},
 	vientos: (req, res) => {
-		const instrumentos = products;
-		res.render('instrumentos/vientos', { instrumentos });
+ 
+		db.Product.findAll(
+			{
+				where: {
+					category: 5
+				}
+			}
+			)
+				.then( (products) =>{
+					return res.render('instrumentos/vientos', {products})
+				   })
+				.catch(error => {
+					console.log(error)
+					res.send(500);
+				})
 	},
 	teclados: (req, res) => {
-		const instrumentos = products;
-		res.render('instrumentos/teclados', { instrumentos });
+
+		db.Product.findAll(
+			{
+				where: {
+					category: 6
+				}
+			}
+			)
+				.then( (products) =>{
+					return res.render('instrumentos/teclados', {products})
+				   })
+				.catch(error => {
+					console.log(error)
+					res.send(500);
+				})
 	},
 	percusion: (req, res) => {
-		const instrumentos = products;
-		res.render('instrumentos/percusion', { instrumentos });
+
+		db.Product.findAll(
+			{
+				where: {
+					category: 2
+				}
+			}
+			)
+				.then( (products) =>{
+					return res.render('instrumentos/percusion', {products})
+				   })
+				.catch(error => {
+					console.log(error)
+					res.send(500);
+				})
 	},
 	amplificadores: (req, res) => {
-		const instrumentos = products;
-		res.render('instrumentos/amplificadores', { instrumentos });
+
+		db.Product.findAll(
+			{
+				where: {
+					category: 4
+				}
+			}
+			)
+				.then( (products) =>{
+					return res.render('instrumentos/amplificadores', {products})
+				   })
+				.catch(error => {
+					console.log(error)
+					res.send(500);
+				})
 	}
 };
 
