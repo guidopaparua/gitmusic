@@ -24,10 +24,9 @@
                     </div>
                     <div class="products">
 
-                        <% instrumentos.forEach(element=>{%>
-                            <% if(element.category==='Saxofones' ) {%>
+                        <% products.forEach(element=>{%>
                                 <article> <a href="/products/<%= element.id %>">
-                                        <img src="<%= element.image %>">
+                                        <img src="/images/products/<%= element.imagen %>">
                                         <div class="main-article">
                                             <p class="price">
                                                 <%= element.price %>
@@ -35,7 +34,6 @@
                                         </div>
                                     </a>
                                 </article>
-                                <%};%>
                                     <% }) %>
                     </div>
                 </section>
