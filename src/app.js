@@ -38,6 +38,14 @@ app.listen(port, () => {
     console.log("Servidor iniciado en: http://localhost:" + port);
 });
 
+app.use(session(
+    {
+      secret: "Secreto",
+      resave: false,
+      saveUninitialized: true
+  }));
+  app.use(cookieParser());
+
 app.use('/', mainRouter);
 app.use('/login', loginRouter);
 app.use('/products', productsRouter);
@@ -55,5 +63,3 @@ app.use('/api/product', productApiRouters);
 app.use((req, res, next) => {
     res.status('404').render('not-found')
 })
-app.use(session({secret: "Secreto"}));
-app.use(cookieParser());
