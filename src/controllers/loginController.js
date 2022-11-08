@@ -1,4 +1,4 @@
-const bcryptjs = require('bcryptjs');
+// const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 const db = require('../database/models/');
 
@@ -15,12 +15,6 @@ const controller = {
                     email: req.body.email
                 }
             })
-            if (user.email == req.body.email) {
-                if (req.body.password == user.password) {
-                    req.session.usuarioLogueado = user;
-                }
-            }
-
             if (!user) {
                 return res.render('login', {
                     errors: [
@@ -28,10 +22,20 @@ const controller = {
                     ]
                 });
             }
+            // const verifyPassword = bcryptjs.compareSync(req.body.password, user.password)
+            // if (!verifyPassword) {
+            //     return res.render('login', {
+            //         errors: [
+            //             { msg: 'Contraseña incorrecta' }
+            //         ]
+            //     });
+            // }
 
-            if (req.body.remember != undefined) {
-                res.cookie('userCookie', user.email, { maxAge: 6000000 })
+            const userAuthTrue = user.first_name;
+            if (req.body.remember) {
+                res.cookie('userCookie', userAuthTrue, { maxAge: 6000000 })
             }
+            req.session.usuarioLogueado = userAuthTrue;
             return res.redirect('/')
         } else {
             return res.render('login', { errors: errors.errors })

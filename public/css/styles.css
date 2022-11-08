@@ -162,6 +162,7 @@ header {
 
 .item-desplegable {
     background-color:  rgb(47, 51, 47);
+    text-decoration: none;
 }
 
 
@@ -217,6 +218,10 @@ header {
 
 .not-found-description{
     margin-bottom: 50px;
+}
+
+.hipervinculo-product{
+    text-decoration: none;
 }
 
 @media (min-width: 478px) {

@@ -24,7 +24,7 @@ const instrumentosRouter = require('./routes/instrumentosRouter');
 const DbProductsRouter = require('./routes/DbProductsRouter');
 const DbUsersRouter = require('./routes/DbUsersRouter');
 //Middlwares
-//const cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware');
+const cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware');
 //api routes
 const userApiRouters = require('./routes/api/userRouter');
 const productApiRouters = require('./routes/api/productRouter');
@@ -39,6 +39,8 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("Servidor iniciado en: http://localhost:" + port);
 });
+const cors = require('cors')
+app.use(cors()) // para que no hayan problemas con con cors cuando consumimos la api
 
 app.use(session(
     {
@@ -47,7 +49,7 @@ app.use(session(
       saveUninitialized: true
   }));
 app.use(cookieParser());
-//app.use(cookieAuthMiddleware);
+app.use(cookieAuthMiddleware);
 
 app.use('/', mainRouter);
 app.use('/login', loginRouter);
