@@ -5,6 +5,7 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const db = require('../database/models');
+const authMiddleware = require('../middlewares/authMiddleware');
 const Op = db.Sequelize.Op;
 
 const controller = {
@@ -94,15 +95,15 @@ const controller = {
 	},
 
 	// Delete - Delete one product from DB
-	destroy : (req, res) => {
+	destroy : async (req, res) => {
 		// Eliminamos el producto que llegó por parámetro su ID
-		let id = req.params.id;
-		
-		let finalProducts = products.filter(product => product.id != id);
-		
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
-
-		res.redirect("/products/");
+		try {
+			const idAEliminar = req.body.id;
+			await db.Product.destroy({where: {id: idAEliminar}});
+			res.redirect("/instrumentos");
+		} catch (error) {
+			res.send(error)
+		} 
 	},
 	
 	cart : (req, res) => {
