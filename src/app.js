@@ -20,6 +20,9 @@ const productsRouter = require('./routes/productsRouter');
 const registerRouter = require('./routes/registerRouter');
 const ofertasRouter = require('./routes/ofertasRouter');
 const instrumentosRouter = require('./routes/instrumentosRouter');
+app.use((req, res, next) => {
+    res.status(404).render('notFound')
+  })
 //DATABASE
 const DbProductsRouter = require('./routes/DbProductsRouter');
 const DbUsersRouter = require('./routes/DbUsersRouter');
