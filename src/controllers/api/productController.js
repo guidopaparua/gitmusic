@@ -5,12 +5,14 @@ const db = require('../../database/models');
      getAll: async function(req, res){
         try {
             const products = await db.Product.findAll({}); // para excluir un dato en especifico
-            // const response = {
-            //     total: products.length,
-            //     data: products,
-            //     status: 200
-            // };
-            return res.json(products);
+            const categories = await db.Category.findAll({});
+            const response = {
+                status: 200,
+                total: products.length,
+                data: products,
+                categories
+            };
+            return res.json(response);
         } catch (error) {
             return res.send(error);
         }
