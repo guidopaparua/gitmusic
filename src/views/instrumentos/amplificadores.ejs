@@ -5,7 +5,7 @@
     <!--STYLES.CSS-->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/stylesIndex.css">
-    <title>Git Music</title>
+    <title>Git Music - Amplificadores</title>
     </head>
 
     <body>
@@ -25,10 +25,11 @@
                     <div class="products">
 
                         <% products.forEach(element=>{%>
-                            <article> <a href="/products/<%= element.id %>">
+                            <article> <a class="hipervinculo-product" href="/products/<%= element.id %>">
                                     <img src="/images/products/<%= element.imagen %>">
                                     <div class="main-article">
                                         <p class="price">
+                                            <h4><%= element.name %></h4>
                                             <h4>$<%= element.price %></h4>
                                         </p>
                                     </div>
@@ -37,29 +38,6 @@
                                 <% }) %>
                     </div>
                 </section>
-                <!--Tercera sección-->
-                <section class="banner-publicidad">
-                    <div>
-                        Añadir aquí la autopauta
-                    </div>
-                </section>
-                <h3>Acá tenemos que ver que poner</h3>
-                <section class="offers">
-                    <div class="products">
-
-                    </div>
-                </section>
-                <h3>CRUD</h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/Products/create" class="crearP">Crear producto</a>
-                        </li>
-                        <li>
-                            <a href="/Products" class="listaP">Listado de productos</a>
-                        </li>
-                    </ul>
-                </nav>
             </main>
             <%- include ('.././partials/footer')%>
     </body>

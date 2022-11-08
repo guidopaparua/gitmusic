@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 	insert into categories (name, description) values ('Saxofones', '');
 	insert into categories (name, description) values ('Teclados', '');
     
-	insert into products (name, description, discount, price, category, imagen) values ('Batería Tama','.',15,1499,2,'tamaDrum.webp');
+	insert into products (name, description, discount, price, category, imagen) values (' ','.',15,1499,2,'tamaDrum.webp');
 	insert into products (name, description, discount, price, category, imagen) values ('Guitarra Fender','.',30,1999,1,'fenderGuitar.webp');
 	insert into products (name, description, discount, price, category, imagen) values ('Bajo Fender','.',10,1999,3,'bajoFender.webp');
 	insert into products (name, description, discount, price, category, imagen) values ('Yamaha F335 Acústica Guitarra Negra','.',null,999,1,'yamahaAcustica.jpg');

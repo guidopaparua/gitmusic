@@ -38,6 +38,13 @@
                 </div>
             </div>
             <a class="navbar-item" href="/ofertas">OFERTAS</a>
+            <div>
+                <% if (locals.isLogued) { %>
+                    <h4>
+                        Bienvenido: <%= locals.usuarioLogueado %>
+                    </h4>
+                    <%} %>
+                </div>
         </div>
     </div>
 </header>

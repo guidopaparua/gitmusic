@@ -70,6 +70,7 @@ main section article img {
     align-items: center;
     background: black;
     color: white;
+    padding-bottom: 90px;
 }
 
 main section article i {

@@ -5,17 +5,18 @@ const db = require('../../database/models');
      getAll: async function(req, res){
         try {
             const products = await db.Product.findAll({}); // para excluir un dato en especifico
+            const categories = await db.Category.findAll({});
             const response = {
+                status: 200,
                 total: products.length,
                 data: products,
-                status: 200
+                categories
             };
-            return res.send(response);
+            return res.json(response);
         } catch (error) {
             return res.send(error);
         }
     },
-    
     getById:  async function(req, res){
         try {
             const product = await db.Product.findByPk(req.params.id, {  }); // para excluir un dato en especifico
