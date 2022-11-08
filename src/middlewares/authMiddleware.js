@@ -1,9 +1,8 @@
-function authMiddleware (req, res, next) {
-    if (req.session.usuarioLogueado != undefined) {
-        next();
-    } else {
-        res.send('Esta pagina es solo para usuarios registrados')
+function authMiddleware(req, res, next) {
+    if (!req.session.usuarioLogueado) {
+       return res.redirect('/register')
     }
+    next();
 }
 
 module.exports = authMiddleware;

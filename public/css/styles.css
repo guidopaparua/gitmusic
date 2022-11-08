@@ -209,6 +209,16 @@ header {
 
 /** FIN FOOTER **/
 
+.not-found{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.not-found-description{
+    margin-bottom: 50px;
+}
+
 @media (min-width: 478px) {
     header {
         position: sticky;

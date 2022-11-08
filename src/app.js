@@ -64,5 +64,5 @@ app.use('/api/product', productApiRouters);
 //end api routes
 //ERROR 404
 app.use((req, res, next) => {
-    res.status('404').render('not-found')
+    res.status('404').render('notFound')
 })

@@ -26,7 +26,7 @@ router.get('/', productsController.index);
 
 /*** Crear un producto ***/ 
 router.get('/create', authMiddleware, productsController.create);
-router.post('/create',authMiddleware, upload.single('image'), productsController.store);
+router.post('/create',authMiddleware, upload.single('imagen'), productsController.store);
 router.get('/cart', productsController.cart);
 
 /*** Devolver un producto ***/ 
