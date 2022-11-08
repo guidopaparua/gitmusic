@@ -4,6 +4,9 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+const db = require('../database/models');
+const Op = db.Sequelize.Op;
+
 const controller = {
 	// (get) Root - Mostrar todos los productos
 	index: (req, res) => {
@@ -28,23 +31,23 @@ const controller = {
 	},
 	
 	// (post) Create -  Método para guardar la info
-	store: (req, res) => {
-		//Generamos el nombre de img
-		let imgNameAndPath = "/images/products/"+req.file.filename;
-		// Guradamos el producto
-		let newProduct = {
-			id: parseInt(products[products.length - 1].id) + 1,
+	store: async (req, res) => { 
+		const newProduct = {
 			name: req.body.name,
 			price: req.body.price,
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
 			// ...req.body
-			image: imgNameAndPath
+			imagen: req.file.filename
+		};
+		try {
+			await db.Product.create(newProduct)
+			return res.redirect('/')
+		} catch (error) {
+			res.send(error)
 		}
-		products.push(newProduct);
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, "  "));
-		res.redirect("/products/"+newProduct.id);
+	
 	},
 
 	// (get) Update - Formulario para editar
