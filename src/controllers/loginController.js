@@ -45,20 +45,3 @@ const controller = {
 };
 
 module.exports = controller;
-        // lo que hicimos con Andrey de process login usando un findOne
-        // const user = await db.User.findOne({
-        //     where: {
-        //         email: req.body.email
-        //     }
-        // })
-        // if (!user || req.body.password != user.password) {
-        //     return res.render('login', {
-        //         errors: [
-        //             {msg: 'Usuario y/o contraseña inválidos'}
-        //         ]
-
-        //     })
-
-        // }
-
-        // req.session.usuarioLogueado = user;
