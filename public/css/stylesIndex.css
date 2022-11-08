@@ -92,11 +92,13 @@ main section h3 {
 
 article div.main-article {
   width: 100%;
-  display: flex;
+  text-decoration: none;
   flex-wrap: wrap;
   align-items: baseline;
   position: relative;
   padding: 5px;
+  text-align: center;
+  color: black;
 }
 
 
@@ -112,6 +114,11 @@ article div.main-article {
 
 .masPopulares {
   color: wheat
+}
+
+.category-description{
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 768px) {
