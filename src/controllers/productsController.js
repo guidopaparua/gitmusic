@@ -10,20 +10,24 @@ const Op = db.Sequelize.Op;
 const controller = {
 	// (get) Root - Mostrar todos los productos
 	index: (req, res) => {
-		res.render('products/products',{
+		res.render('products',{
 			 productsSent: products 
 		})
 	},
 
 	// (get) Detail - Detalle de un producto
-	detail: (req, res) => {
-		const id = req.params.id;
-		const product = products.find(product => product.id == id);
-		if(!product){return res.render('productNotFound')};
-		res.render('productDetails',{
-			product: product
-	   })
-	},
+	detail: async (req, res) => {
+	try {
+		idABuscar = req.params.id;
+		const product = await db.Product.findByPk(idABuscar)
+		if(!product){
+			return res.render('productNotFound')
+		};
+		return res.render('productDetails', {product})
+	} catch (error) {
+		res.render(error)
+	}
+},
 
 	// (get) Create - Formulario para crear
 	create: (req, res) => {
@@ -43,7 +47,7 @@ const controller = {
 		};
 		try {
 			await db.Product.create(newProduct)
-			return res.redirect('/')
+			return res.redirect('/instrumentos')
 		} catch (error) {
 			res.send(error)
 		}
@@ -51,41 +55,42 @@ const controller = {
 	},
 
 	// (get) Update - Formulario para editar
-	edit: (req, res) => {
-		const id = req.params.id;
-		const product = products.find(product => product.id == id);
-		
-		res.render('productEditForm', {
-			product: product
-		})
+	edit: async (req, res) => {
+		try {
+			idABuscar = req.params.id;
+			const product = await db.Product.findByPk(idABuscar)
+			if(!product){
+				return res.render('productNotFound')
+			};
+			return res.render('productEditForm', {product})
+		} catch (error) {
+			res.render(error)
+		}
 	},
 	// (put) Update - Método ara actualizar la info
-	update: (req, res) => {	
-		// Editamos el producto que llegó por parámetro su ID
+	update: async (req, res) => {	
+		try{
 		const idAEditar = req.body.id;
-		const productToEdit = products.find(product => product.id == idAEditar);
+		const productToEdit = await db.Product.findByPk(idAEditar);
 
-		let editProduct = {
-			id: parseInt(req.body.id),
+		await db.Product.update({
 			name: req.body.name,
 			price: req.body.price,
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
 			// ...req.body
-			image: req.file ? "/images/products/"+req.file.filename : productToEdit.image
-		}
-		
-		// Ya hemos modificado el array
-		products.forEach((product, index) => {
-			if(product.id == idAEditar) {
-				products[index] = editProduct;
+			imagen: req.file ? +req.file.filename : productToEdit.imagen
+		}, {
+			where: {
+				id: productToEdit.id
 			}
-		});
+		})
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-		
-		res.redirect("/products/"+idAEditar);
+		res.redirect("/products/"+idAEditar)}
+		catch (error){
+			res.send(error)
+		}
 	},
 
 	// Delete - Delete one product from DB
