@@ -8,7 +8,6 @@ const controller = {
     },
     processLogin: async (req, res) => {
         let errors = validationResult(req);
-        let usuarioALoguearse;
 
         if (errors.isEmpty()) {
             let user = await db.User.findOne({
@@ -18,11 +17,11 @@ const controller = {
             })
             if (user.email == req.body.email) {
                 if (req.body.password == user.password) {
-                    usuarioALoguearse = user;
+                    req.session.usuarioLogueado = user;
                 }
             }
 
-            if (usuarioALoguearse == undefined) {
+            if (!user) {
                 return res.render('login', {
                     errors: [
                         { msg: 'Usuario y/o contraseña inválidos' }
@@ -30,9 +29,8 @@ const controller = {
                 });
             }
 
-            req.session.usuarioLogueado = usuarioALoguearse;
             if (req.body.remember != undefined) {
-                res.cookie('recordame', usuarioALoguearse.email, { maxAge: 6000000 })
+                res.cookie('userCookie', user.email, { maxAge: 6000000 })
             }
             return res.redirect('/')
         } else {
