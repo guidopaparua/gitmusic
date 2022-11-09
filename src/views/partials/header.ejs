@@ -44,13 +44,13 @@
             </div>
             <a class="navbar-item" href="/ofertas">OFERTAS</a>
             <% if (locals.isLogued) { %>
+                <a class="navbar-item" target="_blank" href="http://localhost:3001">DASHBOARD</a>
                 <div>
                     <a class="navbar-item" href="/products/create">CREAR PRODUCTO</a>
                 </div>
                 <div>
                     <h6>
                         Bienvenido: <%= locals.usuarioLogueado.email %>
-                            <img src="../../../public/images/users/<%= locals.usuarioLogueado.imagen %>">
                     </h6>
                 </div>
                 <%} %>
