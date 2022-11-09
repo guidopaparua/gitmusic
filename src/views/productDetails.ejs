@@ -23,7 +23,7 @@
                 <button id="send" class="cart"><i class="fas fa-truck"></i>Agregar al carro</button>
                 
                 <% if (locals.isLogued) { %>
-                    <form action="/products/edit?_method=PATCH" method="POST">
+                    <form action="/products/<%= product.id %>/edit" method="GET">
                         <input type="number" name="id" value="<%= product.id %>" hidden>
                         <button type="submit"> EDITAR </button>
                     </form>
