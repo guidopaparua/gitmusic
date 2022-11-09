@@ -33,7 +33,7 @@ const controller = {
 
             const userAuthTrue = user.email;
             if (req.body.remember) {
-                res.cookie('userCookie', userAuthTrue, { maxAge: 6000000 })
+                res.cookie('userCookie', userAuthTrue, { maxAge: 60000 })
             }
             req.session.usuarioLogueado = userAuthTrue;
             return res.redirect('/')

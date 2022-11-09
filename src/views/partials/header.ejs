@@ -17,9 +17,10 @@
                 <li class="user-logo">
                     <% if (locals.isLogued) { %>
                         <a href="/login" style="color: green"><i class="fa-regular fa-circle-user"></i></a>
-                    <%} else {%>
-                        <a href="/login" style="color: wheat"><i class="fa-regular fa-circle-user"></i></a>
-                        <%}%>
+                        <a class="logout-button" href="/logout" style="color: red"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                        <%} else {%>
+                            <a href="/login" style="color: wheat"><i class="fa-regular fa-circle-user"></i></a>
+                            <%}%>
                 </li>
                 <li class="cart-logo">
                     <a href="/products/cart"><i class="fa-solid fa-cart-shopping cart-logo"></i></a>
@@ -42,18 +43,17 @@
                 </div>
             </div>
             <a class="navbar-item" href="/ofertas">OFERTAS</a>
-            <div>
-                <% if (locals.isLogued) { %>
+            <% if (locals.isLogued) { %>
+                <div>
                     <a class="navbar-item" href="/products/create">CREAR PRODUCTO</a>
-                    <%} %>
-            </div>
-            <div>
-                <% if (locals.isLogued) { %>
+                </div>
+                <div>
                     <h6>
-                        Bienvenido: <%= locals.usuarioLogueado.email %>
+                        Bienvenido: <%= locals.usuarioLogueado.first_name %>
+                            <img src="../../../public/images/users/<%= locals.usuarioLogueado.imagen %>">
                     </h6>
+                </div>
                 <%} %>
-            </div>
         </div>
     </div>
 </header>

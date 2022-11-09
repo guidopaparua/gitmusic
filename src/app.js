@@ -57,6 +57,7 @@ app.use('/products', productsRouter);
 app.use('/register', registerRouter);
 app.use('/ofertas', ofertasRouter);
 app.use('/instrumentos', instrumentosRouter);
+app.use('/logout', loginRouter);
 //DATABASE
 app.use('/product', DbProductsRouter);
 app.use('/Users', DbUsersRouter);
