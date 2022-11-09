@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   CREATE TABLE IF NOT EXISTS `products` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `description` VARCHAR(180) NOT NULL,
+  `description` VARCHAR(1000) NOT NULL,
   `discount` INT,
   `price` decimal NOT NULL,
   `category` INT not null,
