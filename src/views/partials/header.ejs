@@ -15,7 +15,11 @@
                     </form>
                 </li>
                 <li class="user-logo">
-                    <a href="/login" style="color: wheat"><i class="fa-regular fa-circle-user"></i></a>
+                    <% if (locals.isLogued) { %>
+                        <a href="/login" style="color: green"><i class="fa-regular fa-circle-user"></i></a>
+                    <%} else {%>
+                        <a href="/login" style="color: wheat"><i class="fa-regular fa-circle-user"></i></a>
+                        <%}%>
                 </li>
                 <li class="cart-logo">
                     <a href="/products/cart"><i class="fa-solid fa-cart-shopping cart-logo"></i></a>
@@ -40,11 +44,16 @@
             <a class="navbar-item" href="/ofertas">OFERTAS</a>
             <div>
                 <% if (locals.isLogued) { %>
-                    <h4>
-                        Bienvenido: <%= locals.usuarioLogueado %>
-                    </h4>
+                    <a class="navbar-item" href="/products/create">CREAR PRODUCTO</a>
                     <%} %>
-                </div>
+            </div>
+            <div>
+                <% if (locals.isLogued) { %>
+                    <h6>
+                        Bienvenido: <%= locals.usuarioLogueado.email %>
+                    </h6>
+                <%} %>
+            </div>
         </div>
     </div>
 </header>

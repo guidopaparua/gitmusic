@@ -22,10 +22,12 @@
                     <p class="price">$<%= product.price %> </p>
                 <button id="send" class="cart"><i class="fas fa-truck"></i>Agregar al carro</button>
                 
-                <form action="/products/delete?_method=DELETE" method="POST">
-                    <input type="number" name="id" value="<%= product.id %>" hidden>
-                    <button type="submit"> ELIMINAR </button>
-                </form>
+                <% if (locals.isLogued) { %>
+                    <form action="/products/delete?_method=DELETE" method="POST">
+                        <input type="number" name="id" value="<%= product.id %>" hidden>
+                        <button type="submit"> ELIMINAR </button>
+                    </form>
+                <%} %> 
                 
                 </div>
             </div>

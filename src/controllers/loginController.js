@@ -31,7 +31,7 @@ const controller = {
             //     });
             // }
 
-            const userAuthTrue = user.first_name;
+            const userAuthTrue = user.email;
             if (req.body.remember) {
                 res.cookie('userCookie', userAuthTrue, { maxAge: 6000000 })
             }
@@ -41,6 +41,11 @@ const controller = {
             return res.render('login', { errors: errors.errors })
         }
 
+    },
+    logout: (req, res) => {
+        res.clearCookie('userCookie');
+        req.session.destroy();
+        return res.redirect('/')
     }
 };
 
