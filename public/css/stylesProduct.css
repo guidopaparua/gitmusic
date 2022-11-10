@@ -71,7 +71,7 @@ article div.main-article {
     padding-bottom: 50px;
     top: 20px;
     margin-bottom: 40px;
-    background-color:rgb(209,203,193);
+    background-color: rgb(209, 203, 193);
 }
 
 .product .title {
@@ -86,15 +86,20 @@ article div.main-article {
 }
 
 .product img {
-    width: 40%
+    width: 40%;
+    margin: 28px 8px 0px 28px;
 }
 
 .botonera {
-    display: flex;
+    /* display: flex;
     position: absolute;
     right: 20px;
     bottom: 10px;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
+    padding-inline: 15px;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .botonera .button {
@@ -102,10 +107,25 @@ article div.main-article {
     flex-wrap: nowrap;
 }
 
-.botonera .price{
-    font-size: 20px;
+.botonera .price {
+    /* font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.edit-delete-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (min-width: 361px) {
@@ -145,8 +165,8 @@ article div.main-article {
     }
 
     .botonera {
-        position: relative;
-        top: 20px;
-        justify-content: flex-start;
+        position: static;
+        /* top: 20px;
+        justify-content: flex-start; */
     }
 }

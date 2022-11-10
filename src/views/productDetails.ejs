@@ -7,38 +7,50 @@
     <link rel="stylesheet" href="/css/stylesProduct.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Git Music - <%= product.name%></title>
-</head>
+    <title>Git Music - <%= product.name%>
+    </title>
+    </head>
 
-<body>
-    <%- include ('./partials/header')%> 
-    <main>
-        <div class="product">
-            <img src='/images/products/<%= product.imagen %>'> 
-            <div>
-                <h2 class="title"><%= product.name %> </h2>
-                <p class="description"><%= product.description %> </p>
-                <div class="botonera">
-                    <p class="price">$<%= product.price %> </p>
-                <button id="send" class="cart"><i class="fas fa-truck"></i>Agregar al carro</button>
-                
-                <% if (locals.isLogued) { %>
-                    <form action="/products/<%= product.id %>/edit" method="GET">
-                        <input type="number" name="id" value="<%= product.id %>" hidden>
-                        <button type="submit"> EDITAR </button>
-                    </form>
-                    <form action="/products/delete?_method=DELETE" method="POST">
-                        <input type="number" name="id" value="<%= product.id %>" hidden>
-                        <button type="submit"> ELIMINAR </button>
-                    </form>
-                <%} %> 
-                
+    <body>
+        <%- include ('./partials/header')%>
+            <main>
+                <div class="product">
+                    <img src='/images/products/<%= product.imagen %>'>
+                    <div class="top-container">
+                        <div>
+                            <h2 class="title">
+                                <%= product.name %>
+                            </h2>
+                            <p class="description">
+                                <%= product.description %>
+                            </p>
+                            <div class="botonera">
+                                <p class="price">$<%= product.price %>
+                                </p>
+                                <button id="send" class="cart"><i class="fas fa-truck"></i> Agregar al carro</button>
+                            </div>
+                        </div>
+
+                        <% if (locals.isLogued) { %>
+                            <div class="edit-delete-buttons">
+                                <form action="/products/<%= product.id %>/edit" method="GET">
+                                    <input type="number" name="id" value="<%= product.id %>" hidden>
+                                    <button type="submit"> EDITAR </button>
+                                </form>
+                                <br>
+                                <form action="/products/delete?_method=DELETE" method="POST">
+                                    <input type="number" name="id" value="<%= product.id %>" hidden>
+                                    <button type="submit"> ELIMINAR </button>
+                                </form>
+                            </div>
+                            <%} %>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    
-    <%- include ('./partials/footer')%>
-    
-</body>
+            </main>
+
+            <%- include ('./partials/footer')%>
+
+    </body>
+
 </html>

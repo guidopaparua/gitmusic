@@ -7,7 +7,7 @@ const { body } = require('express-validator');
 const validaciones = [
     body('first_name').notEmpty().withMessage('Este campo es obligatorio'),
     body('last_name').notEmpty().withMessage('Este campo es obligatorio'),
-    body('email').isEmail().withMessage('Este campo es obligatorio'),
+    body('email').isEmail().withMessage('Ingresá un email válido'),
     body('password').notEmpty().withMessage('Este campo es obligatorio')
 ];  
 
