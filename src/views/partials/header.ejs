@@ -20,14 +20,23 @@
                         </button>
                     </form>
                 </li> -->
-                <li class="user-logo">
-                    <% if (locals.isLogued) { %>
-                        <a class="icon-navbar" href="/login" style="color: green"><i class="fa-regular fa-circle-user"></i></a>
+                <% if (locals.isLogued) { %>
+                    <li class="user-logo">
+                        <div class="dropdown navbar-item">
+                            <a class="icon-navbar" href="/login" style="color: green"><i class="fa-regular fa-circle-user"></i></a>
+                            <div class="dropdown-content-user">
+                                <h6 class="item-deplegable" rel="noopener" ><%= locals.usuarioLogueado.first_name %> <%= locals.usuarioLogueado.last_name %></h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="logout-logo">
                         <a class="logout-button icon-navbar" href="/logout" style="color: red"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-                        <%} else {%>
-                            <a class="icon-navbar" href="/login" style="color: lightslategray"><i class="fa-regular fa-circle-user"></i></a>
-                            <%}%>
-                </li>
+                    </li>
+                <%} else {%>
+                    <li class="user-logo">
+                        <a class="icon-navbar" href="/login" style="color: lightslategray"><i class="fa-regular fa-circle-user"></i></a>
+                    </li>
+                <%}%>
                 <li class="cart-logo">
                     <a class="icon-navbar" style="color: lightslategray" href="/products/cart"><i class="fa-solid fa-cart-shopping cart-logo"></i></a>
                 </li>
@@ -53,11 +62,6 @@
                 <a class="navbar-item" target="_blank" href="http://localhost:3001">DASHBOARD</a>
                 <div>
                     <a class="navbar-item" href="/products/create">CREAR PRODUCTO</a>
-                </div>
-                <div>
-                    <h6>
-                        Bienvenido: <%= locals.usuarioLogueado.email %>
-                    </h6>
                 </div>
                 <%} %>
         </div>

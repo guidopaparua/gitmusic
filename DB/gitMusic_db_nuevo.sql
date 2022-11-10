@@ -80,12 +80,12 @@ CREATE TABLE IF NOT EXISTS `users` (
 	insert into products (name, description, discount, price, category, imagen) values ('Ludwing Clásica Maple Bateria','Preferidos por profesionales por su versatilidad tonal, los tambores Classic Maple son la opción ideal para cualquier aplicación de rendimiento. Su alta sensibilidad, amplio rango de sintonización dinámica y ataque agudo lo convierten en la opción ideal para actuaciones en vivo.',null,2599,2,'ludwingBateria.webp');
     
     
-	insert into users(first_name,last_name,email,password,admin) values('guido','papa rua','guidopaparua@gitmusic.com','guido',1);
-	insert into users(first_name,last_name,email,password,admin) values('juan','grasso','juangrasso@gitmusic.com','juan',1);
-	insert into users(first_name,last_name,email,password,admin) values('monica','reyes','monicareyes@gitmusic.com','monica',1);
-	insert into users(first_name,last_name,email,password,admin) values('santiago','hamwee','santiagohamwee@gitmusic.com','santiago',1);
-	insert into users(first_name,last_name,email,password,admin) values('lucas','seijas','lucasseijas@gitmusic.com','lucas',1);
-  insert into users(first_name,last_name,email,password,admin) values('usuario','prueba','usuarioprueba@gmail.com','usuario',0);
+	insert into users(first_name,last_name,email,password,admin) values('Guido','Papa Rua','guidopaparua@gitmusic.com','guido',1);
+	insert into users(first_name,last_name,email,password,admin) values('Juan Pablo','Grasso','juangrasso@gitmusic.com','juan',1);
+	insert into users(first_name,last_name,email,password,admin) values('Monica','Reyes','monicareyes@gitmusic.com','monica',1);
+	insert into users(first_name,last_name,email,password,admin) values('Santiago','Hamwee','santiagohamwee@gitmusic.com','santiago',1);
+	insert into users(first_name,last_name,email,password,admin) values('Lucas','Seijas','lucasseijas@gitmusic.com','lucas',1);
+  insert into users(first_name,last_name,email,password,admin) values('Usuario','Prueba','usuarioprueba@gmail.com','usuario',0);
     
     
     
