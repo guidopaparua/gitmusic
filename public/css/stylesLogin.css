@@ -5,57 +5,65 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.right-container{
+main {
+    background-color: rgb(209, 203, 193);
+}
+
+.right-container {
     width: 40%;
 }
 
-.right-container img{
+.right-container img {
     width: 100%;
     max-height: 100%;
 }
 
-.left-container{
+.left-container {
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-title{
+.login-title {
     font-size: 35px;
     margin-bottom: 50px;
 }
 
-.login-container{
+.login-container {
     margin: 100px 0px 50px -80px;
 }
 
-.user-data{
+.user-data {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
 }
 
-.login-input{
+.login-input {
     height: 52px;
     width: 462px;
     padding-left: 10px;
     font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
 }
 
-.password-input{
-height: 52px;
-width: 462px;
-padding-left: 10px;
-font-size: 20px;
+.password-input {
+    height: 52px;
+    width: 462px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
 }
 
-.login-input::placeholder{
+.login-input::placeholder {
     font-size: 20px;
 }
 
-.access-container{
+.access-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,60 +71,63 @@ font-size: 20px;
     flex-direction: column;
 }
 
-.login-button{
+.login-button {
     height: 40px;
     width: 150px;
     font-size: 20px;
     border-radius: 5px;
 }
 
-.reset-password{
+.reset-password {
     margin-top: 10px;
 }
 
-.line{
+.line {
     width: 200px;
     height: 1px;
     background-color: lightgray;
     margin-block: 10px;
 }
 
-.hipervinculo{
+.hipervinculo {
     text-decoration: none;
     color: black;
 }
 
-.login-button{
+.login-button {
     background: red;
     color: white;
     border-color: red;
 }
 
-.login-button:hover{
+.login-button:hover {
     background: black;
     color: white;
     border-color: black;
 }
 
-.remember{
+.remember {
     display: flex;
     justify-content: space-around;
 }
 
-@media (max-width: 478px){
-    .login-container{
+@media (max-width: 478px) {
+    .login-container {
         width: 100%;
         margin: 100px 0px 0px 0px;
-     }
+    }
+
     .left-container {
         width: 100%;
         padding: 10px;
-     }
-    .login-input{
+    }
+
+    .login-input {
         width: 100%;
     }
-    .password-input{
+
+    .password-input {
         width: 100%;
     }
-    
+
 }
