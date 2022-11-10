@@ -4,34 +4,48 @@
 <%- include ('./partials/head')%>
     <!--STYLES.CSS-->
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesIndex.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Git Music - Editar producto <%= product.name %> </title>
+    <title>Git Music - Editar producto <%= product.name %>
+    </title>
     </head>
 
     <body>
         <%- include ('./partials/header')%>
-    <form action="/products/edit?_method=PUT" method="POST" enctype="multipart/form-data">
-        <input type="number" name="id" value="<%= product.id %>" hidden>
-        <input type="text" class="submit" name="name" value="<%= product.name %>" placeholder="Nombre del producto"></input>
-        <select name="category" id="category">
-            <option <%= product.category=='1' ? "selected" : "" %> value=1>Guitarra</option>
-            <option <%= product.category=='2' ? "selected" : "" %> value="2">Batería</option>
-            <option <%= product.category=='3' ? "selected" : "" %> value="3">Bajo</option>
-            <option <%= product.category=='4' ? "selected" : "" %> value="4">Amplificador</option>
-            <option <%= product.category=='5' ? "selected" : "" %> value="5">Saxofón</option>
-            <option <%= product.category=='6' ? "selected" : "" %> value=6>Teclado</option>
-        </select>
-        <input type="text" class="submit" name="description" value="<%= product.description %>" placeholder="Descripción"></input>
-        <input type="number" class="submit" name="price" value="<%= product.price %>" placeholder="Precio"></input>
-        <input type="file" class="submit" name="imagen"  placeholder="Foto"></input>
-        <input type="number" class="submit" name="discount" placeholder="descuento" value="<%= product.discount %>">
-        <button type="submit" >
-            EDITAR
-        </button>
-    </form>
+            <section class="frase">
+                <h1>
+                    Git Music
+                </h1>
+            </section>
+            <form action="/products/edit?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="create-edit">
+                    <input type="number" name="id" value="<%= product.id %>" hidden>
+                    <input class="crear-editar" type="text" class="submit" name="name" value="<%= product.name %>"
+                        placeholder="Nombre del producto"></input>
+                    <select class="crear-editar" name="category" id="category">
+                        <option <%=product.category=='1' ? "selected" : "" %> value=1>Guitarra</option>
+                        <option <%=product.category=='2' ? "selected" : "" %> value="2">Batería</option>
+                        <option <%=product.category=='3' ? "selected" : "" %> value="3">Bajo</option>
+                        <option <%=product.category=='4' ? "selected" : "" %> value="4">Amplificador</option>
+                        <option <%=product.category=='5' ? "selected" : "" %> value="5">Saxofón</option>
+                        <option <%=product.category=='6' ? "selected" : "" %> value=6>Teclado</option>
+                    </select>
+                    <input class="crear-editar" type="text" class="submit" name="description"
+                        value="<%= product.description %>" placeholder="Descripción"></input>
+                    <input class="crear-editar" type="number" class="submit" name="price" value="<%= product.price %>"
+                        placeholder="Precio"></input>
+                    <input class="crear-editar" type="file" class="submit" name="imagen" placeholder="Foto"></input>
+                    <input class="crear-editar" type="number" class="submit" name="discount" placeholder="descuento"
+                        value="<%= product.discount %>">
+                    <button class="crear-editar" type="submit">
+                        EDITAR
+                    </button>
+                </div>
+            </form>
 
-    <%- include ('./partials/footer')%>
-    
-</body>
+            <%- include ('./partials/footer')%>
+
+    </body>
+
 </html>

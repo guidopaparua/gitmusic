@@ -12,33 +12,36 @@
 
     <body>
         <%- include ('./partials/header')%>
-        <section class="frase">
-            <h1>
-                Bienvenido a Git Music
-            </h1>
-        </section>
-    <form  action="/products/create" method="POST" enctype="multipart/form-data">
-        <div class="create">
-        <input type="text" class="submit" name="name" placeholder="Nombre del producto"></input>
-        <select name="category" id="category">
-            <option value="1">Guitarra</option>
-            <option value="2">Batería</option>
-            <option value="3">Bajo</option>
-            <option value="4">Amplificador</option>
-            <option value="5">Saxofón</option>
-            <option value="6">Teclado</option>
-        </select>
-        <input type="text" class="submit" name="description" placeholder="Descripción"></input>
-        <input type="number" class="submit" name="price" placeholder="Precio"></input>
-        <input type="file" class="submit" name="imagen" placeholder="Foto"></input>
-        <input type="number" class="submit" name="discount" placeholder="descuento">
-        <button type="submit" >
-            CREAR
-        </button>
-    </div>
-    </form>
+            <section class="frase">
+                <h1>
+                    Git Music
+                </h1>
+            </section>
+            <form action="/products/create" method="POST" enctype="multipart/form-data">
+                <div class="create-edit">
+                    <input class="crear-editar" type="text" class="submit" name="name"
+                        placeholder="Nombre del producto"></input>
+                    <select class="crear-editar boton" name="category" id="category">
+                        <option value="1">Guitarra</option>
+                        <option value="2">Batería</option>
+                        <option value="3">Bajo</option>
+                        <option value="4">Amplificador</option>
+                        <option value="5">Saxofón</option>
+                        <option value="6">Teclado</option>
+                    </select>
+                    <input class="crear-editar" type="text" class="submit" name="description"
+                        placeholder="Descripción"></input>
+                    <input class="crear-editar" type="number" class="submit" name="price" placeholder="Precio"></input>
+                    <input class="crear-editar" type="file" class="submit" name="imagen" placeholder="Foto"></input>
+                    <input class="crear-editar" type="number" class="submit" name="discount" placeholder="Descuento">
+                    <button class="crear-editar boton" type="submit">
+                        CREAR
+                    </button>
+                </div>
+            </form>
 
-    <%- include ('./partials/footer')%>
-    
-</body>
+            <%- include ('./partials/footer')%>
+
+    </body>
+
 </html>

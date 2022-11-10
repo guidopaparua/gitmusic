@@ -6,14 +6,20 @@
             </div>
 
             <ul class="header-user">
-                <li class="main-searchbox">
+                <li class="buscar">
+                    <input type="text" placeholder="Buscar" required>
+                    <div class="botoncito">
+                        <i class="fas fa-search icon"></i>
+                    </div>
+                </li>
+                <!-- <li class="main-searchbox">
                     <form class="d-flex" action="/search" method="get">
                         <input name="search" type="text" class="search" placeholder="Buscar productos"></input>
                         <button type="submit" class="lupita-container">
                             <i class="fa-solid fa-magnifying-glass logo-lupita"></i>
                         </button>
                     </form>
-                </li>
+                </li> -->
                 <li class="user-logo">
                     <% if (locals.isLogued) { %>
                         <a href="/login" style="color: green"><i class="fa-regular fa-circle-user"></i></a>
