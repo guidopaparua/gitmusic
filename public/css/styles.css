@@ -166,6 +166,15 @@ header {
     text-decoration: none;
 }
 
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209,203,193);
+    flex-direction: column;
+    padding: 20px;
+}
+
 
 /** FIN HEADER **/
 

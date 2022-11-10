@@ -4,6 +4,7 @@
 <%- include ('./partials/head')%>
     <!--STYLES.CSS-->
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesIndex.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Git Music - Crear producto</title>
@@ -11,7 +12,13 @@
 
     <body>
         <%- include ('./partials/header')%>
-    <form action="/products/create" method="POST" enctype="multipart/form-data">
+        <section class="frase">
+            <h1>
+                Bienvenido a Git Music
+            </h1>
+        </section>
+    <form  action="/products/create" method="POST" enctype="multipart/form-data">
+        <div class="create">
         <input type="text" class="submit" name="name" placeholder="Nombre del producto"></input>
         <select name="category" id="category">
             <option value="1">Guitarra</option>
@@ -28,6 +35,7 @@
         <button type="submit" >
             CREAR
         </button>
+    </div>
     </form>
 
     <%- include ('./partials/footer')%>

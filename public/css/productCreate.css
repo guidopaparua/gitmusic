@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: darkgray;
+    margin: 10px 0px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 50px;
+    top: 20px;
+    margin-bottom: 40px;
+    background-color:rgb(209,203,193);
+}
+
+.product .title {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.product .description {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.product img {
+    width: 40%
+}
+
+.botonera {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    flex-wrap: nowrap;
+}
+
+.botonera .button {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.botonera .price{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 361px) {
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    ul {
+        /* border: 3px solid orange; */
+        display: flex;
+        width: 45%;
+        padding: 5px;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .price,
+    .discount {
+        width: 50%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-direction: row;
+    }
+
+    .product .description {
+        font-size: 24px;
+    }
+
+    .botonera {
+        position: relative;
+        top: 20px;
+        justify-content: flex-start;
+    }
+}
