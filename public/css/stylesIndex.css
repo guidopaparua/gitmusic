@@ -28,15 +28,15 @@ ul {
 }
 
 
-.offers{
+.offers {
   display: flex;
   justify-content: center;
 }
 
 main section article {
   background-color: wheat;
-    margin: 30px;
-    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  margin: 30px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
 main section article img {
@@ -52,7 +52,7 @@ main section article img {
   background-image: url(../images/recital.jpeg);
 }
 
-.titulos-productos{
+.titulos-productos {
   text-align: center;
   font-weight: 900;
   font-size: 30px;
@@ -61,26 +61,59 @@ main section article img {
   color: white;
 }
 
-.products{
+.products {
   display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    background: black;
-    color: white;
-    padding-bottom: 90px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  padding-bottom: 90px;
 }
 
-.crear-editar{
+.crear-editar {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 3px 25px;
+  text-align: center;
+  background-color: white;
+}
+
+.crear-editar-label {
+  color: grey;
+  border-radius: 30px;
+  padding: 3px 25px;
+  text-align: center;
+  background-color: white;
+  width: 245px;
+  height: 34px;
+  line-height: 27px;
+  border: 2px solid black;
+}
+
+.crear-editar-category {
+  color: grey;
+  border-radius: 30px;
+  padding: 3px 25px;
+  text-align: center;
+  background-color: white;
+  width: 245px;
+  height: 34px;
+  line-height: 27px;
+  border: 2px solid black;
+}
+
+.crear-editar-button {
+  background-color: lightslategray;
   border-radius: 30px;
   padding: 3px 25px;
   text-align: center;
 }
 
-.boton{
-  background-color: lightslategray;
+.crear-editar-foto {
+  padding-left: 222px;
 }
 
 main section article i {
@@ -127,7 +160,7 @@ article div.main-article {
   color: wheat
 }
 
-.category-description{
+.category-description {
   text-decoration: none;
   color: black;
 }
@@ -150,7 +183,7 @@ article div.main-article {
   .price,
   .discount {
     width: 50%;
-    color:black;
+    color: black;
   }
 }
 

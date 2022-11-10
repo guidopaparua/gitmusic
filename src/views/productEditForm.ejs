@@ -21,9 +21,9 @@
             <form action="/products/edit?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="create-edit">
                     <input type="number" name="id" value="<%= product.id %>" hidden>
-                    <input class="crear-editar" type="text" class="submit" name="name" value="<%= product.name %>"
-                        placeholder="Nombre del producto"></input>
-                    <select class="crear-editar" name="category" id="category">
+                    <input class="crear-editar" type="text" class="submit" name="name" value="<%= product.name %>" placeholder="Nombre del producto"></input>
+                    <br>
+                    <select class="crear-editar-category" name="category" id="category">
                         <option <%=product.category=='1' ? "selected" : "" %> value=1>Guitarra</option>
                         <option <%=product.category=='2' ? "selected" : "" %> value="2">Batería</option>
                         <option <%=product.category=='3' ? "selected" : "" %> value="3">Bajo</option>
@@ -31,14 +31,19 @@
                         <option <%=product.category=='5' ? "selected" : "" %> value="5">Saxofón</option>
                         <option <%=product.category=='6' ? "selected" : "" %> value=6>Teclado</option>
                     </select>
-                    <input class="crear-editar" type="text" class="submit" name="description"
-                        value="<%= product.description %>" placeholder="Descripción"></input>
-                    <input class="crear-editar" type="number" class="submit" name="price" value="<%= product.price %>"
-                        placeholder="Precio"></input>
-                    <input class="crear-editar" type="file" class="submit" name="imagen" placeholder="Foto"></input>
-                    <input class="crear-editar" type="number" class="submit" name="discount" placeholder="descuento"
-                        value="<%= product.discount %>">
-                    <button class="crear-editar" type="submit">
+                    <br>
+                    <input class="crear-editar" type="text" class="submit" name="description" value="<%= product.description %>" placeholder="Descripción"></input>
+                    <br>
+                    <input class="crear-editar" type="number" class="submit" name="price" value="<%= product.price %>"placeholder="Precio"></input>
+                    <br>
+                    <label class="crear-editar-label">
+                        Subir imagen
+                        <input class="crear-editar crear-editar-foto" type="file" id="foto-crear-producto" style="color: transparent; display: none;" class="submit" name="imagen" placeholder="Foto"></input>
+                    </label>
+                    <br>
+                    <input class="crear-editar" type="number" class="submit" name="discount" placeholder="descuento" value="<%= product.discount %>"></input>
+                    <br>
+                    <button class="crear-editar-button" type="submit">
                         EDITAR
                     </button>
                 </div>

@@ -19,9 +19,9 @@
             </section>
             <form action="/products/create" method="POST" enctype="multipart/form-data">
                 <div class="create-edit">
-                    <input class="crear-editar" type="text" class="submit" name="name"
-                        placeholder="Nombre del producto"></input>
-                    <select class="crear-editar boton" name="category" id="category">
+                    <input class="crear-editar" type="text" class="submit" name="name" placeholder="Nombre del producto"></input>
+                    <br>
+                    <select class="crear-editar-category" name="category" id="category">
                         <option value="1">Guitarra</option>
                         <option value="2">Batería</option>
                         <option value="3">Bajo</option>
@@ -29,12 +29,19 @@
                         <option value="5">Saxofón</option>
                         <option value="6">Teclado</option>
                     </select>
-                    <input class="crear-editar" type="text" class="submit" name="description"
-                        placeholder="Descripción"></input>
+                    <br>
+                    <input class="crear-editar" type="text" class="submit" name="description" placeholder="Descripción"></input>
+                    <br>
                     <input class="crear-editar" type="number" class="submit" name="price" placeholder="Precio"></input>
-                    <input class="crear-editar" type="file" class="submit" name="imagen" placeholder="Foto"></input>
-                    <input class="crear-editar" type="number" class="submit" name="discount" placeholder="Descuento">
-                    <button class="crear-editar boton" type="submit">
+                    <br>
+                    <label class="crear-editar-label">
+                        Subir imagen
+                        <input class="crear-editar crear-editar-foto" type="file" id="foto-crear-producto" style="color: transparent; display: none;" class="submit" name="imagen" placeholder="Foto"></input>
+                    </label>
+                    <br>
+                    <input class="crear-editar" type="number" class="submit" name="discount" placeholder="Descuento"></input>
+                    <br>
+                    <button class="crear-editar-button" type="submit">
                         CREAR
                     </button>
                 </div>
