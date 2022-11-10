@@ -25,6 +25,10 @@ h3{
   padding-bottom: 10px;
 }
 
+.la-contraseña{
+  padding-left: 12px;
+}
+
 .formulario{
   color: black;
     align-content: center;
@@ -87,6 +91,23 @@ h3{
   height: 34px;
   line-height: 27px;
   border: 2px solid black;
+}
+
+.eye-button-container{
+  background: transparent;
+  right: 6px;
+  top: 12px;
+  border: none;
+  position: relative;
+}
+
+.eye-button{
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: 9px;
+  left: -34px;
 }
 
 @media (max-width: 478px){

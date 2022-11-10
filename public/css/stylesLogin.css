@@ -39,6 +39,7 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 
 .login-input {

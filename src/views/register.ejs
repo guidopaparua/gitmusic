@@ -48,6 +48,9 @@
                         <div class="la-contraseña">
                             <br>
                             <input class="form-register" type="password" placeholder="Contraseña" name="password" id="password" required>
+                            <button class="eye-button-container">
+                                <i class="fa-regular fa-eye-slash eye-button" onclick="password()"></i>
+                            </button>
                         </div>
                         <div class="la-contraseña-2">
                             <br>
@@ -63,7 +66,16 @@
             </section>
 
             <%- include ('./partials/footer')%>
-
+            <script>
+                function password() {
+                    var tipo = document.getElementById("password");
+                    if (tipo.type == "password") {
+                        tipo.type = "text";
+                    } else {
+                        tipo.type = "password";
+                    }
+                }
+            </script>
     </body>
 
 </html>
