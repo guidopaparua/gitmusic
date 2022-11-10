@@ -75,6 +75,7 @@ header {
     border: 1px solid silver;
     border-radius: 30px;
     transition: all 0.6s ease;
+    background-color: white;
     
 }
 
@@ -101,6 +102,18 @@ header {
 
 .buscar input:focus{
     width: 240px;
+}
+
+.icon-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: wheat;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    line-height: 55px;
 }
 
 .search {
@@ -149,7 +162,6 @@ header {
 }
 .cart-logo {
     text-decoration: none;
-    color: wheat;
 }
 
 .header-navbar {
