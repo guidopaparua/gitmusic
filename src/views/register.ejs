@@ -48,7 +48,7 @@
                         <div class="la-contraseña">
                             <br>
                             <input class="form-register" type="password" placeholder="Contraseña" name="password" id="password" required>
-                            <button class="eye-button-container">
+                            <button type="button" class="eye-button-container">
                                 <i class="fa-regular fa-eye-slash eye-button" onclick="password()"></i>
                             </button>
                         </div>
@@ -73,6 +73,12 @@
                         tipo.type = "text";
                     } else {
                         tipo.type = "password";
+                    }
+                    var tipo2 = document.getElementById("password2");
+                    if (tipo2.type == "password") {
+                        tipo2.type = "text";
+                    } else {
+                        tipo2.type = "password";
                     }
                 }
             </script>
