@@ -13,11 +13,15 @@ p {
 }
 
 body{
-    background-color:rgb(233, 233, 233);
+    background-color:rgb(209, 203, 193);
+}
+
+main{
+    background-color: rgb(209, 203, 193);
 }
 
 .carrito{
-    background-color:white;
+    background-color:rgb(209, 203, 193);
     width: 98%;
     margin: 0 auto;
     border: 1px black solid;
@@ -94,7 +98,7 @@ body{
 
 .seccion_total_carrito{
     margin-top: 15px;
-    background-color: white;
+    background-color: rgb(209, 203, 193);
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -102,6 +106,7 @@ body{
 .sub_total_carrito{
     display: flex;
     justify-content: space-around;
+    width: ;
 }
 
 .sub_total_carrito p{
@@ -162,7 +167,6 @@ body{
         padding-left: 10%;
         font-size: 30px;
         color: black;
-        margin-top: 30px;
         margin-bottom: 15px;
     }
 
